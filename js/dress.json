@@ -1,0 +1,29 @@
+{
+    "set": [
+        {"id":"1", "name": "SET1", "src":"../img/change/set1.png", "alt": "SET1"},
+        {"id":"2", "name": "SET2", "src":"../img/change/set2.png", "alt": "SET2"},
+        {"id":"3", "name": "SET3", "src":"../img/change/set3.png", "alt": "SET3"},
+        {"id":"4", "name": "SET4", "src":"../img/change/set1.png", "alt": "SET4"},
+        {"id":"5", "name": "SET5", "src":"../img/change/set2.png", "alt": "SET5"},
+        {"id":"6", "name": "SET6", "src":"../img/change/set3.png", "alt": "SET6"}
+    ],
+    "top": [
+        {"id":"1", "name": "top1", "src":"../img/change/top1.png", "alt": "top1"},
+        {"id":"2", "name": "top2", "src":"../img/change/top2.png", "alt": "top2"},
+        {"id":"3", "name": "top3", "src":"../img/change/top3.png", "alt": "top3"}
+    ],
+    "bottom": [
+        {"id":"1", "name": "bottom1", "src":"../img/change/bottom1.png", "alt": "bottom1"},
+        {"id":"2", "name": "bottom2", "src":"../img/change/bottom2.png", "alt": "bottom2"},
+        {"id":"3", "name": "bottom3", "src":"../img/change/bottom3.png", "alt": "bottom3"}
+    ],
+    "acc": [
+        {"id":"1", "name": "acc1", "src":"../img/change/acc1.png", "alt": "acc1" , "class" : "acc_type1"},
+        {"id":"2", "name": "acc2", "src":"../img/change/acc2.png", "alt": "acc2" , "class" : "acc_type2"},
+        {"id":"3", "name": "acc3", "src":"../img/change/acc3.png", "alt": "acc3" , "class" : "acc_type3"},
+        {"id":"4", "name": "acc4", "src":"../img/change/acc4.png", "alt": "acc4" , "class" : "acc_type4"}
+    ],
+    "shose": [
+        {"id":"1", "name": "shose1", "src":"../img/change/shose1.png", "alt": "shose1"}
+    ]
+}

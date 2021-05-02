@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ㅊㅊ - 옷갈아입히기</title>
+    <meta name="Robots" content="all" />
+    <meta name="Keywords" content="" />
+    <meta name="Author" content="" />
+    <meta name="Copyright" content="" />
+    <meta name="publisher" content="">
+    <meta name="reply-to" content="" />
+    <meta name="date" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<link rel="stylesheet" href="../css/change/common_change.css" type="text/css">
+<link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="../css/swiper.css" type="text/css">
+<link rel="stylesheet" href="../css/layout.css" type="text/css">
+<link rel="stylesheet" href="../css/change/change.css" type="text/css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <section class="contents">
+            <div class="changeDressWrap">
+                <div class="mark"><img src="../img/change/mark.png" alt="MARK"></div>
+                <button class="back"><img src="../img/change/back.png" alt="뒤돌아보기"></button>
+                <div class="characters">
+                    <div class="base">
+                        <img src="../img/change/characters.png" alt="">
+                    </div>
+                    <div class="dress set" data-id="set"></div>
+                    <div class="dress top" data-id="top"></div>
+                    <div class="dress acc" data-id="acc"></div>
+                    <div class="dress bottom" data-id="bottom"></div>
+                    <div class="dress shose" data-id="shose"></div>
+                </div>
+                <div class="dressRoomWrap">
+                    <div class="dressRoom dressRoom1">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- <div class="swiper-slide"><div class="dressRoom"><img src="../img/change/set1.png" alt="옷세트1" class="dragimg"></div></div>
+                                <div class="swiper-slide"><div class="dressRoom"><img src="../img/change/set2.png" alt="옷세트2" class="dragimg"></div></div>
+                                <div class="swiper-slide"><div class="dressRoom"><img src="../img/change/set3.png" alt="옷세트3" class="dragimg"></div></div>
+                                <div class="swiper-slide"><div class="dressRoom"><img src="../img/change/set1.png" alt="옷세트4" class="dragimg"></div></div>
+                                <div class="swiper-slide"><div class="dressRoom"><img src="../img/change/set2.png" alt="옷세트5" class="dragimg"></div></div>
+                                <div class="swiper-slide"><div class="dressRoom"><img src="../img/change/set3.png" alt="옷세트6" class="dragimg"></div></div> -->
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- swiper-container -->
+                    </div>
+                    <!-- dressRoom -->
+                    <div class="reset"><button class='btn_reset'>되돌리기</button></div>
+                </div>
+                <!-- dressRoomWrap -->
+
+                <div class="clothesType">
+                    <ul>
+                        <li class="set"><a href="">SET</a></li>
+                        <li class="top"><a href=""><img src="../img/change/top.png" alt="상의"></a></li>
+                        <li class="bottom"><a href=""><img src="../img/change/bottom.png" alt="하의"></a></li>
+                        <li class="acc"><a href=""><img src="../img/change/acc.png" alt="악세사리"></a></li>
+                        <li class="shose"><a href=""><img src="../img/change/shoes.png" alt="신발"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- changeDressWrap -->
+        </section>       
+    </div>
+
+<!-- <script src="../js/jquery-3.5.1.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jquery.ui.touch-punch.min.js"></script>
+<script src="../js/swiper.js"></script>
+<script>
+
+$.ajax({
+    url: '../layout/header.html',
+    success: function (data) {
+        $('#header').append(data);
+        $('.all_menu').addClass('imja');
+        $('.all_menu li:nth-child(3)').addClass('active');
+        $('.all_menu .inner .img img').attr('src', '../img/main/menu_character3.png');
+    }
+})
+
+
+let setting = {
+    direction: 'vertical',
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    allowTouchMove: false,
+    slidesPerGroup: 4,
+    // loop: true,
+    observer: true,
+    observeParents: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    
+}
+let swiper = new Swiper('.swiper-container' , setting);
+</script>
+<script type="text/javascript">
+    let className;
+    let Default;
+    function init() {
+        // $('.dress').droppable( "option", "disabled", false );
+        function dragAndDrop(dragTarget, dropTarget) {
+            let cursorPos ; 
+            if(className  == 'bottom'){
+                cursorPos = {top:170, left:80}
+            }else if(className  == 'shose'){
+                //clone.position( { of: $(this), my: 'center top', at: 'center top' } );
+                cursorPos = {top:30, left:120}
+            }else{
+                //clone.position( { of: $(this), my: 'center top', at: 'center top' } );
+                cursorPos = {top:80, left:80}
+            }
+            $(dragTarget).draggable({ 
+                            revert: true ,
+                            cursor: 'move',
+                             cursorAt: cursorPos,
+                            accept: dropTarget,
+                            //stack: dropTarget,
+                            appendTo: 'body',
+                            scope: className,
+                            containment: 'window',
+                            scroll: false,
+                            helper:function(){
+                                var src = this.src;
+                                var srcName = src.split('.');
+                                    srcName = srcName[0]+ '.' + srcName[1]
+                             //    console.log(srcName )
+                                return $("<img src='"+srcName+"_big.png' />"); 
+                            } ,
+                            start:function(){
+
+                              
+                            },
+                            // helper: "clone",
+                            revertDuration: 0,
+                        });
+            $(dropTarget).droppable({
+                tolerance: 'pointer',
+                scope: className,
+                greedy: true,
+                classes: {
+                    "ui-droppable-hover": "hovered"
+                },
+                drop: function(event, ui) {
+                   // $('.dress').draggable('destroy');
+                   //$(this).append(ui.draggable);
+                   let src = ui.draggable[0].src;
+                   let srcName = src.split('.');
+                       srcName = srcName[0]+ '.' + srcName[1]
+                   let clone =  ui.draggable.clone().attr('src',srcName+'_big.png' );
+
+                   let slotType = $(this).data( 'id' );
+                   let cardType = clone.data( 'id' );
+                  if( slotType == cardType){
+                      $(".dress.set").html("");
+                      if( className  == 'set'){
+                        $(".dress").html("");
+
+                      }else{
+                        $(".dress."+className).html("");
+                      }
+                    
+                    
+                    // console.log($(this))
+                    $('.dress.'+className).append(clone);
+                    ui.draggable.addClass( 'correct' );
+                    //ui.draggable.draggable("option", "revert", false);
+                    let zIndex = "300";
+                    let marginLeft = '-4px';
+                    let marginTop = '-3px';
+                    if( className  == 'set'){
+                        clone.position( { of: $(this), my: 'center top', at: 'center top' } );
+                    }else if(className  == 'top'){
+                        zIndex = '301'
+                        clone.position( { of: $(this), my: 'center top', at: 'center top' } );
+                    }else if(className  == 'bottom'){
+                        clone.position( { of: $(this), my: 'center bottom', at: 'center bottom' } );
+                    }else if(className  == 'acc'){
+                        if(clone.hasClass('acc_type1')){
+                            clone.position( { of: $(this), my: 'center top', at: 'center top' } );
+                            marginTop ="183px";
+                            zIndex = '302'
+                        }else if(clone.hasClass('acc_type2')){
+                            clone.position( { of: $(this), my: 'center top', at: 'center top' } );
+                            marginLeft =" -2px";
+                            marginTop ="236px";
+                            zIndex = '302'
+                        }else if(clone.hasClass('acc_type3')){
+                            marginTop ="206px";
+                            zIndex = '302';
+                            
+                        }else if(clone.hasClass('acc_type4')){
+                            marginTop = "433px";
+                            marginLeft =" 0px";
+                        }
+                    }else if(className  == 'shose'){
+                        marginLeft = '1px'
+                    }else{
+                        clone.position( { of: $(this), my: 'center top', at: 'center top' } );
+                    }
+                    
+                    clone.css({
+                            zIndex:zIndex,
+                            marginLeft:marginLeft,
+                            marginTop:marginTop
+                        });
+                    }
+                }
+            });
+
+        }
+        
+       
+        dragAndDrop(".dragimg."+className, ".dress."+className);
+    }
+
+    $(".btn_reset").on("click", function() {
+    
+        $(".swiper-wrapper").html(Default);
+        $( init );
+        $(".dress").html("");
+
+    });
+    
+
+    function slideSeting(){
+        if( className == undefined){
+            className = 'set';
+        }
+
+        // $('.dress').removeClass('set top bottom acc shose')
+        // $('.dress').addClass(className);
+        $.ajax({
+            type : "GET",                            
+            url : "../js/dress.json",                 
+            dataType : 'json',                        
+            mimeType: "application/json",    
+            //data : JSON.stringify(test),              
+            success: function(data){
+                let list = data[className];
+                let slide = "";
+                //let listClass = list[index].class;
+                // if(listClass == undefined){
+                //     console.log(listClass)
+                // }
+                $.each(list, function(index) {
+                    //  console.log(list[index].class)
+                    slide += '<div class="swiper-slide">';
+                    slide += '<div class="dressRoom">';
+                    slide += '<img src="' + list[index].src + '" alt="'+ list[index].name +'" class="dragimg '+ className +' '+ list[index].class +'" data-id="'+ className +'"/>';
+                    slide += '</div>';
+                    slide += '</div>';
+                });
+               swiper.destroy();
+               $(".dressRoom .swiper-wrapper").empty().append(slide);
+               swiper = new Swiper('.swiper-container' , setting);
+               Default = $(".swiper-wrapper").html();
+               $( init );
+               
+            }                  
+        });
+       
+        // console.log(Default)
+    };
+
+    
+    $(".clothesType li").on("click", function(e) {
+        e.preventDefault();
+        className = $(this).attr('class');
+
+        // $( ".dress" ).droppable( "destroy" );
+        
+
+
+        slideSeting();
+
+
+       
+
+    });
+
+    slideSeting();
+   // $( init );
+    </script>
+
+
+</body>
+</html>

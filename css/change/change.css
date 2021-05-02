@@ -1,0 +1,189 @@
+html, body, #wrap, .contents, .changeDressWrap {
+    width: 100%;
+    height: 100%;
+}
+
+.changeDressWrap{
+    position: relative;
+    /* overflow: hidden; */
+    background: url('../../img/change/bg.png') no-repeat center center;
+}
+
+.characters{
+    position: relative;
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -46%);
+}
+.dress {
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 236px;
+    
+}
+.dress.top{
+    bottom: 102px;
+    height: 133px;
+}
+.dress.bottom{
+    bottom: 31px;
+    height: 76px;
+    z-index: 1;
+}
+.dress.acc{    height: 553px; z-index: 2;}
+.dress.shose{
+    bottom: 0px;
+    height: 43px;
+}
+/* .dress.ui-droppable-hover, */
+.dress.hovered{
+    outline:10px dashed purple;
+}
+.dressRoomWrap{
+    position: relative;
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform:translate(153%, -51%);
+    width: 160px;
+    
+}
+.dressRoomWrap .swiper-container{
+    height: 510px;
+}
+.dressRoomWrap .dressRoom{}
+.swiper-container{overflow: hidden;}
+.dressRoomWrap .dressRoom .swiper-slide{
+    height: 120px;
+}
+.dressRoomWrap .dressRoom .swiper-slide .dressRoom{
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+}
+.dressRoomWrap .dressRoom .swiper-slide .dressRoom img{
+    z-index: 10;
+}
+.dressRoomWrap .dressRoom .swiper-slide .dressRoom img{}
+
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: 0.31;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+    }
+.swiper-container-vertical > .swiper-pagination-bullets {
+    right: 0px;
+    top: 50%;
+    -webkit-transform: translate3d(0px, -50%, 0);
+    transform: translate3d(0px, -50%, 0);
+}
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 6px 0;
+    display: block;
+}
+.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 10px;
+}
+
+
+.dressRoomWrap .reset button{
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 1px #5d5d5d;
+    background-color: #2c2c2c;
+    font-weight: bold;
+    line-height: 3;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #8b8b8b;
+    line-height: 40px;
+    font-size: 20px;
+    
+}
+
+
+.clothesType{
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50% , 432%);
+}
+.clothesType ul{
+    font-size: 0;
+    text-align: center;
+}
+.clothesType ul li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+.clothesType ul li a{
+    display: block;
+    width: 76px;
+    height: 76px;
+    /* border: solid 1px #2996e3; */
+    background-color: #2996e3;
+    line-height: 76px;
+    border-radius: 50%;
+}
+.clothesType ul li a img{}
+
+.clothesType ul li.set{
+   
+}
+.clothesType ul li.set a{
+    font-family: BlackHanSans;
+    background: #ffffff;
+    font-size: 15px;
+    line-height: 2.27;
+    letter-spacing: normal;
+    text-align: center;
+    font-weight: 700;
+    color: #2996e3;
+    line-height: 76px;
+}
+
+
+.changeDressWrap .mark{
+    position: relative;
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-222%, -145%)
+}
+
+.changeDressWrap .back{
+    position: relative;
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-563%, 479%);
+    background: none;
+    border:none;
+}
+
+/* .dragimg {
+    max-width:255px
+}
+.dragimg.bottom {
+    max-width: 170px;
+} */

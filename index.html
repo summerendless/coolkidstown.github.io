@@ -12,12 +12,38 @@
 </head>
 <body>
 <!-- <header id="header"></header> -->
+<div style="overflow: hidden;">
+	<div style="width: 300px;height: 200px;background:#ddd;float: left;">
+	이쪽으로 옮기기
+	</div>
 
-<div class="css_test"><img src="images/color_box.gif"/></div>
+	<div class="popup-layer see-all-popup" style="display: block;top: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: auto;
+    height: 30%;
+    display: none;
+    padding-bottom: 0;">
+		<h2>Recently viewed</h2>
+		<span class="btn-close-popup category-close"><button>Close</button></span>
+		<div class="css_test"><img src="images/color_box.gif"/></div>
+		<div class="css_test"><img src="images/color_box.gif"/></div>
+		<div class="css_test"><img src="images/color_box.gif"/></div>
+		<div class="css_test"><img src="images/color_box.gif"/></div>
+	</div>
+</div>
 <!-- Content -->
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+
+
 <!-- <script>
 	$(function () {
 		$.ajax({
