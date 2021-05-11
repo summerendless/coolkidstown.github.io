@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
     background: url("../images/bg-invite.png") no-repeat;
     height: 100%;
-    background-size: 100% 100%;
+    background-size: contain;
 }
 
 .door-back{
@@ -19,7 +19,8 @@ body {
     left: 50%;
     bottom: 13%;
     width: 58vw;
-    height: 28vh;
+    height: 24vh;
+    /* height: 28vh; */
     background: url("../images/house.png") no-repeat;
     background-size: 100% 100%;
 }
@@ -110,5 +111,13 @@ body {
     .bg-wrap {
         max-width:50%;
         margin:  0 auto;
+    }
+    .door1, .door2 {
+        width: 33vw;
+    height: 28vh;
+    }
+    .door-back {
+        width: 33vw;
+        height: 28vh;
     }
 }
