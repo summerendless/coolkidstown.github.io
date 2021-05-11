@@ -7,34 +7,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/change/common_change.css">
 <link rel="stylesheet" type="text/css" href="./css/change/change.css">
+<link rel="stylesheet" type="text/css" href="./css/cool.css">
+
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 </head>
 <body>
-	<style>
-		/* .bg-invite {background: url("./images/bg-invite.png") no-repeat;} */
-		.bg-wrap{position: relative;}
-		.bg-invite {    width: 100%;height: 100vh;}
-		.bg-invite img {width: 100%;height: 100%;}
-		.house, .door {position: absolute;} 
-		.house {    position: absolute;
-    bottom: 13%;
-    width: 68vw;
-    left: 50%;
-    transform: translateX(-50%);}
-		.door1 {     width: 65vw;
-    bottom: 14%;
-    left: 17%;}
-	.door2 {width: 68vw;
-    bottom: 13%;
-    left: 16%;}
-	</style>
 <!-- <header id="header"></header> -->
 <div class="bg-wrap">
-	<div class="bg-invite"><img src="./images/bg-invite.png"/></div>
-	<img src="./images/house.png" class="house"/>
-	<img src="./images/door-1.png" class="door door1"/>
-	<img src="./images/door-2.png" class="door door2"/>
+	<div class="door-back">
+		<div class="door1"></div>
+		<div class="door2"></div>
+	</div>
 </div>
 <!-- Content -->
 
@@ -57,6 +41,59 @@
 
     $( '.css_test img' ).draggable();
 
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+	$(".door-back").on("click", function(e) {
+		// $(".door1").addClass("doorOpen");
+		e.preventDefault();
+			$this = $(this);
+			// $(".door1").addClass("doorOpen").siblings().removeClass('doorOpen');
+			if(!$(".door1").hasClass("doorOpen")){
+				$(".door1").addClass("doorOpen");
+			}else {
+				$(".door2").addClass("doorOpen2");
+				$(".door1").css("left","22%");
+				// $(".door1").removeClass("doorOpen");
+			}
+	});
+
+	// $(".door2").on("click", function(e) {
+	// 	// $(".door1").addClass("doorOpen");
+	// 	e.preventDefault();
+	// 		$this = $(this);
+	// 		if(!$(".door1").hasClass("redoorOpen")){
+	// 			$(".door2").addClass("doorOpen2");
+	// 		}else {
+	// 			$(".door2").removeClass("doorOpen2");
+	// 		}
+	// });
+
+});
+// });
+
+	//  (function(){
+
+    //         const stage = document.querySelector(".stage");
+    //         function doorHandler(e){
+    //             if($(this).classList.querySelectorAll('house')){
+    //                 $(this).parentNode.classList.add('door-opened');
+    //             }
+              
+    //         }
+
+    //         stage.addEventListener('click', doorHandler)
+    //     })();
+	
+	
+
+// var element = document.querySelector(".door1");
+// element.addEventListener("click", toggleDoor);
+// console.log(1);
+
+// function toggleDoor() {
+//   element.classList.toggle("doorOpen");
+// }
 </script>
 </body>
 </html>
