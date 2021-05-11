@@ -29,7 +29,7 @@ body {
     left: 0;
     bottom: 0;
     width: 59vw;
-    height: 28vh;
+    height: 24vh;
 
     background: url("../images/door-1.png") no-repeat;
     background-size: 100% 100%;
@@ -45,7 +45,7 @@ body {
     left: 0;
     bottom: 0;
     width: 59vw;
-    height: 28vh;
+    height: 24vh;
     background: url("../images/door-2.png") no-repeat;
     background-size: 100% 100%;
     transition: .5s;
