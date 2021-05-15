@@ -16,85 +16,52 @@
 <!-- 제목을 지정 -->
 <meta http-equiv="Title" content="" />
 <!-- 페이지를 작성한 제작자명을 지정 -->
-<meta http-equiv="Author" content="onflou " />
+<meta http-equiv="Author" content="" />
 <!-- 제작사를 지정 -->
 <meta http-equiv="Publisher" content="" />
 
 <!-- 브라우저 호환성을 지정 -->
 <meta http-equiv="X-UA-Compatible" content="ie=edge,chorme=1">
 <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
-<title>CoolKidsTown</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./css/change/common_change.css">
-<link rel="stylesheet" type="text/css" href="./css/change/change.css">
-<link rel="stylesheet" type="text/css" href="./css/cool.css">
 
+<title>CoolKidsTown</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link rel="stylesheet" type="text/css" href="./css/cool.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 </head>
 <body>
-<!-- <header id="header"></header> -->
 <div class="bg-wrap">
 	<div class="door-back">
 		<div class="door1"></div>
 		<div class="door2"></div>
+		<a class="open_video"></a>
 	</div>
-	<!-- <div class=""><img src="./images/C.png"/></div> -->
-	<a class="btn" style="width:100px; height: 100px;position: absolute;     position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);"></a>
 	<iframe src="./images/SILENCE.MP3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
-	<video playsinline id="myVideo" class="video"	width="640" autoplay style="width: 100%;
-    height: 100vh;position:relative;background-color: rgb(33,150,95);">
-		<source src="./images/invite.mp4" type="video/mp4">
-	  </video>
-
-	  <div class="btn2" style="width:100px; height: 100px;position: absolute;     position: absolute;
-	  bottom: 10%;
-	  left: 50%;
-	  transform: translateX(-50%);display: NONE;">SNFFJFJF</div>
-	</div>
-<!-- Content -->
+	<video playsinline id="myVideo" class="video"width="640" autoplay><source src="./images/invite.mp4" type="video/mp4"></video>
+	<div class="open_invi">초대장 만들기</div>
+</div>
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 
-
-<!-- <script>
-	$(function () {
-		$.ajax({
-			url: '../layout/header.html',
-			success: function (data) {
-				$('#header').append(data);
-			}
-		})
-	});
-</script> -->
-<script type="text/javascript">
-
-    $( '.css_test img' ).draggable();
-
-</script>
 <script type="text/javascript">
 	$(function(){
-  var btn = $('.btn');
-  var ex_hide_fast = $('.ex_hide_fast');
-  var video = $('.video');
-  btn.click(function(){
-	  if($(".door2").hasClass("doorOpen2")){
-		video.fadeIn(1000);
-		$(".video").get(0).play();
+		var open_video = $('.open_video');
+		var video = $('.video');
+		open_video.click(function(){
+			if($(".door2").hasClass("doorOpen2")){
+				video.fadeIn(1000);
+				$(".video").get(0).play();
+			}
+		});
+	});
 
-	  }
-  });
-});
-  $(".video").on("ended", function(){
-    $(".btn2").fadeIn(500);
-//   ex_hide_fast.click(function(){
-//     video.fadeOut('fast');
-//   });
+  	$(".video").on("ended", function(){
+	$(".open_invi").fadeIn(500);
 });
 </script>
 <script type="text/javascript">
@@ -114,43 +81,7 @@
 				$(".video").css("display","block");
 			}
 	});
-
-	// $(".door2").on("click", function(e) {
-	// 	// $(".door1").addClass("doorOpen");
-	// 	e.preventDefault();
-	// 		$this = $(this);
-	// 		if(!$(".door1").hasClass("redoorOpen")){
-	// 			$(".door2").addClass("doorOpen2");
-	// 		}else {
-	// 			$(".door2").removeClass("doorOpen2");
-	// 		}
-	// });
-
 });
-// });
-
-	//  (function(){
-
-    //         const stage = document.querySelector(".stage");
-    //         function doorHandler(e){
-    //             if($(this).classList.querySelectorAll('house')){
-    //                 $(this).parentNode.classList.add('door-opened');
-    //             }
-              
-    //         }
-
-    //         stage.addEventListener('click', doorHandler)
-    //     })();
-	
-	
-
-// var element = document.querySelector(".door1");
-// element.addEventListener("click", toggleDoor);
-// console.log(1);
-
-// function toggleDoor() {
-//   element.classList.toggle("doorOpen");
-// }
 </script>
 </body>
 </html>

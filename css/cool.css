@@ -19,8 +19,6 @@ body {
     height: 100%;
     background-size: 100% 100%;
 }
-.word {position: absolute;}
-.word img{width: 100%; height: 100%;}
 
 .door-back{
     transform: translateX(-50%);
@@ -40,15 +38,10 @@ body {
     /* width: 59vw; */
     width: 74vw;
     height: 30vh;
-
     background: url("../images/door-1.png") no-repeat;
     background-size: 100% 100%;
-    /* z-index: 100; */
     transition: .5s;
     transform-origin: 0%;
-    /* transform-origin: left;
-
-    transition: all 0.5s ease-in-out; */
 }
 .door2 {
     position: absolute;
@@ -66,22 +59,19 @@ body {
 {
   transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(105deg);
 } */
+/* width: 76vw;
+height: 29vh; */
 
-
-    /* width: 76vw;
-    height: 29vh; */
-
-    .doorOpen2 {
-        transform: perspective(800px) rotateY(-120deg);
-        /* z-index: 101; */
-        /* left: 37%;
-        bottom: 13%; */
-        left: 22%;
-        bottom: 4%;
-        /* width: 80vw;
-        height: 25vh; */
-    }
-
+.doorOpen2 {
+    transform: perspective(800px) rotateY(-120deg);
+    /* z-index: 101; */
+    /* left: 37%;
+    bottom: 13%; */
+    left: 22%;
+    bottom: 4%;
+    /* width: 80vw;
+    height: 25vh; */
+}
 .doorOpen {
     transform: perspective(800px) rotateY(-120deg);
     /* z-index: 101; */
@@ -106,20 +96,32 @@ body {
     transform: initial;
 }
 
-/* .door-opened .door-body2 {
-    transform: perspective(3000px) rotateY( 
-120deg
- );
-    z-index: 99999;
-    left: 29%;
-    bottom: 13%;
-    width: 100vw;
-    height: 31vh;
-} */
-.video {display: none;}
-.img33 {
-    background: url("../images/C.png") no-repeat;
+.word {position: absolute;}
+.word img{width: 100%; height: 100%;}
+.video {
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    background-color: rgb(33,150,95);
 }
+.open_video {
+    width: 73vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.open_invi {
+    width: 73vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.video {display: none;}
+
 .word1 {
     width: 24px;
     height: 11px;
@@ -204,6 +206,7 @@ body {
     bottom: 62%;
     left: 25%;
 }
+
 .copy_right {
     position: absolute;
     left: 20px;
@@ -211,6 +214,7 @@ body {
     width: 30vw;
 }
 .copy_right img {width: 100%;}
+
 .out {
     position: absolute;
     width: 8vw;
@@ -218,6 +222,7 @@ body {
     top: 10px;
 }
 .out img {width: 100%;}
+
 @media only screen and (min-width: 800px) {
     .bg-wrap {
         max-width:50%;
