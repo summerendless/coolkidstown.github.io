@@ -1,0 +1,83 @@
+
+const vid = "#cardAudio1";
+const vid2 = "#cardAudio2";
+const vid3 = "#cardAudio3";
+const vid4 = "#cardAudio4";
+const bgm = "#bgm";
+
+const speakerBtn = $('.speaker_wrap');
+const cardBtn1 = $('.btn_card_my');
+const cardBtn2 = $('.btn_card_fr');
+
+function playVid(el) { 
+    el = $(el)[0];
+    el.play(); 
+} 
+
+function pauseVid(el) { 
+    el = $(el)[0];
+    el.pause(); 
+    el.currentTime = 0;
+} 
+
+function pauseAll() {
+    $('.audio').each(function(i){
+        i = i+1;
+        $('#cardAudio' + i)[0].pause();
+        $('#cardAudio' + i)[0].currentTime = 0;
+    })
+}
+
+function setHalfVolume (){
+    $(bgm)[0].volume = 0.3;
+}
+function setFullVolume (){
+    $(bgm)[0].volume = 1;
+}
+
+$(vid).on("ended", function(){
+    playVid(vid2);
+});
+
+$(vid2).on("ended", function(){
+    speakerBtn.addClass('one');
+    cardBtn1.addClass('on');
+    setFullVolume();
+});
+
+$(vid3).on("ended", function(){
+    setFullVolume()
+});
+
+$(vid4).on("ended", function(){
+    setFullVolume()
+});
+
+speakerBtn.on('click', function(e){
+    e.preventDefault();
+    pauseAll();
+    setHalfVolume();
+    if(!$(this).hasClass('one')){
+        playVid(vid);
+    }else{
+        setHalfVolume();
+        playVid(vid2);
+    }
+});
+
+cardBtn1.on('click', function(e){
+    e.preventDefault();
+    pauseAll();
+    if(!$(this).hasClass('on')){
+        return false;
+    };
+    setHalfVolume();
+    playVid(vid3);
+});
+
+cardBtn2.on('click', function(e){
+    e.preventDefault();
+    pauseAll();
+    setHalfVolume();
+    playVid(vid4);
+});
