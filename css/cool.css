@@ -28,7 +28,7 @@ body {
     left: 50%;
     bottom: 13%;
     width: 73vw;
-    height: 24vh;
+    height: 30vh;
     /* height: 28vh; */
     background: url("../images/house.png") no-repeat;
     background-size: 100% 100%;
@@ -39,7 +39,7 @@ body {
     bottom: 0;
     /* width: 59vw; */
     width: 74vw;
-    height: 24vh;
+    height: 30vh;
 
     background: url("../images/door-1.png") no-repeat;
     background-size: 100% 100%;
@@ -55,7 +55,7 @@ body {
     left: 0;
     bottom: 0;
     width: 74vw;
-    height: 24vh;
+    height: 30vh;
     background: url("../images/door-2.png") no-repeat;
     background-size: 100% 100%;
     transition: .5s;
