@@ -19,7 +19,13 @@
 		<div class="door1"></div>
 		<div class="door2"></div>
 	</div>
-</div>
+	<!-- <div class=""><img src="./images/C.png"/></div> -->
+	<a class="btn" style="width:100px; height: 100px;position: absolute; "></a>
+	<video oncontextmenu="return false;" id="myVideo" class="video"	autoplay style="width: 100vw;
+    height: 100vh;position:relative;">
+		<source src="./images/invite.mp4" type="video/mp4">
+	  </video>
+	</div>
 <!-- Content -->
 
 <script src="js/jquery-3.5.1.min.js"></script>
@@ -43,6 +49,22 @@
 
 </script>
 <script type="text/javascript">
+	$(function(){
+  var btn = $('.btn');
+  var ex_hide_fast = $('.ex_hide_fast');
+  var video = $('.video');
+  btn.click(function(){
+	  if($(".door2").hasClass("doorOpen2")){
+		video.fadeIn(1000);
+
+	  }
+  });
+//   ex_hide_fast.click(function(){
+//     video.fadeOut('fast');
+//   });
+});
+</script>
+<script type="text/javascript">
  $(document).ready(function(){
 	$(".door-back").on("click", function(e) {
 		// $(".door1").addClass("doorOpen");
@@ -51,10 +73,12 @@
 			// $(".door1").addClass("doorOpen").siblings().removeClass('doorOpen');
 			if(!$(".door1").hasClass("doorOpen")){
 				$(".door1").addClass("doorOpen");
-			}else {
+			}else if($(".door1").hasClass("doorOpen")){
 				$(".door2").addClass("doorOpen2");
 				$(".door1").css("left","22%");
 				// $(".door1").removeClass("doorOpen");
+			}else {
+				$(".video").css("display","block");
 			}
 	});
 

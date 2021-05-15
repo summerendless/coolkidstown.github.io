@@ -106,7 +106,10 @@ body {
     width: 100vw;
     height: 31vh;
 } */
-
+.video {display: none;}
+.img33 {
+    background: url("../images/C.png") no-repeat;
+}
 @media only screen and (min-width: 800px) {
     .bg-wrap {
         max-width:50%;
