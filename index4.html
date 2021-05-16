@@ -33,55 +33,13 @@
 
 </head>
 <body>
-<div class="bg-wrap">
-	<div class="door-back">
-		<div class="door1"></div>
-		<div class="door2"></div>
-		<a class="open_video"></a>
-	</div>
-	<iframe src="./images/SILENCE.MP3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
-	<video playsinline id="myVideo" class="video" autoplay><source src="./images/invite.mp4" type="video/mp4"></video>
-	<a class="open_invi" href="invite_paper.html">초대장 만들기</a>
+<div class="bg-wrap bg4">
+    <div class="souv_house"><img src="./images/souv.gif" style="width: 100%;"/></div>
 </div>
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 
-<script type="text/javascript">
-	$(function(){
-		var open_video = $('.open_video');
-		var video = $('.video');
-		open_video.click(function(){
-			if($(".door2").hasClass("doorOpen2")){
-				video.fadeIn(1000);
-				$(".video").get(0).play();
-			}
-		});
-	});
-
-  	$(".video").on("ended", function(){
-	$(".open_invi").fadeIn(500);
-});
-</script>
-<script type="text/javascript">
- $(document).ready(function(){
-	$(".door-back").on("click", function(e) {
-		// $(".door1").addClass("doorOpen");
-		e.preventDefault();
-			$this = $(this);
-			// $(".door1").addClass("doorOpen").siblings().removeClass('doorOpen');
-			if(!$(".door1").hasClass("doorOpen")){
-				$(".door1").addClass("doorOpen");
-			}else if($(".door1").hasClass("doorOpen")){
-				$(".door2").addClass("doorOpen2");
-				$(".door1").css("left","22%");
-				// $(".door1").removeClass("doorOpen");
-			}else {
-				$(".video").css("display","block");
-			}
-	});
-});
-</script>
 </body>
 </html>
