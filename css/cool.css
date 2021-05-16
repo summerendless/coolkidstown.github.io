@@ -22,7 +22,7 @@ body {
 .bg-wrap.bg3{
     position: relative;
     margin: 0 auto;
-    background: url("../images/whyy.gif") no-repeat;
+    background: url("../images/whyy.GIF") no-repeat;
     height: 100%;
     background-size: 100% 100%;
 }
@@ -120,10 +120,9 @@ height: 29vh; */
     left: 0;
 }
 .open_invi {
-    width: 73vw;
-    height: 30vh;
+    color: #fff;
     position: absolute;
-    bottom: 10%;
+    bottom: 23%;
     left: 50%;
     transform: translateX(-50%);
     display: none;
