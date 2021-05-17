@@ -49,7 +49,7 @@ body {
     height: 30vh;
     /* height: 28vh; */
     background: url("../images/house.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%;   
 }
 .door1{
     position: absolute;
