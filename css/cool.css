@@ -30,7 +30,7 @@ a:active, a:focus{
     height: 100%;
     background-size: 100% 100%;
 }
-.bg-wrap.bg2{
+.bg-wrap.bg1{
     position: relative;
     margin: 0 auto;
     background: url("../images/invite_paper.png") no-repeat;
@@ -38,7 +38,7 @@ a:active, a:focus{
     /* min-height: 100vh; */
     background-position: 0 -10vh;
 } 
-.bg-wrap.bg3{
+.bg-wrap.bg2{
     position: relative;
     margin: 0 auto;
     background: url("../images/whyy.GIF") no-repeat;
@@ -49,6 +49,13 @@ a:active, a:focus{
     position: relative;
     margin: 0 auto;
     background: url("../images/souv_bg.png") no-repeat;
+    height: 100%;
+    background-size: 100% 100%;
+}
+.bg-wrap.bg3 {
+    position: relative;
+    margin: 0 auto;
+    background: url("../images/cherrytree.png") no-repeat;
     height: 100%;
     background-size: 100% 100%;
 }
@@ -167,6 +174,11 @@ height: 29vh; */
     bottom: 61%;
     left: 25%;
 }
+.word_d {
+    width: 12vw;
+    top: 30%;
+    right: 16%;
+}
 .word2 {
     width: 8vw;
     bottom: 55%;
@@ -176,6 +188,11 @@ height: 29vh; */
     width: 10vw;
     bottom: 54%;
     left: 61%;
+}
+.word_l {
+    width: 12vw;
+    top: 29%;
+    right: 32%;
 }
 .word4 {
     width: 16vw;
@@ -187,6 +204,11 @@ height: 29vh; */
     bottom: 39%;
     left: 61%;
 }
+.word_n {
+    width: 10vw;
+    top: 22%;
+    left: 23%;
+}
 .word6 {
     width: 15vw;
     bottom: 59%;
@@ -196,6 +218,26 @@ height: 29vh; */
     width: 22vw;
     bottom: 63%;
     left: 36%;
+}
+.word_c {
+    width: 10vw;
+    top: 23%;
+    left: 46%;
+}
+.word_o {
+    width: 10vw;
+    top: 36%;
+    left: 46%;
+}
+.word_oo {
+    width: 12vw;
+    bottom: 63%;
+    left: 16%;
+}
+.word_ooo {
+    width: 10vw;
+    top: 41%;
+    left: 46%;
 }
 .word8 {
     width: 14vw;
@@ -212,10 +254,35 @@ height: 29vh; */
     bottom: 41%;
     left: 50%;
 }
+.word_t {
+    width: 10vw;
+    bottom: 50%;
+    left: 38%;
+}
+.word_i {
+    bottom: 56%;
+    width: 11vw;
+    left: 25%;
+}
 .word11 {
     width: 10vw;
     bottom: 46%;
     left: 51%;
+}
+.word_k {
+    top: 34%;
+    width: 10vw;
+    left: 37%;
+}
+.word_s {
+    top: 38%;
+    width: 10vw;
+    right: 14%;
+}
+.word_w {
+    width: 10vw;
+    top: 36%;
+    left: 55%;
 }
 .word12 {
     width: 8vw;
@@ -243,12 +310,20 @@ height: 29vh; */
 
 .out {
     position: absolute;
-    width: 8vw;
+    width: 10vw;
     right: 20px;
     top: 10px;
 }
 .out img {width: 100%;}
 
+.click {
+    position: absolute;
+    bottom: 10%;
+    width: 120vw;
+    padding-bottom: 11%;
+}
+.click2, .click3 {display: none;}
+.click img {width: 100%;}
 @media only screen and (min-width: 800px) {
     .bg-wrap {
         max-width:50%;
@@ -262,5 +337,39 @@ height: 29vh; */
     .door-back {
         width: 33vw;
         height: 28vh;
+    }
+    .video {top: -27%;}
+    .bg-wrap.bg2{
+        background: url("../images/invite_paper.png") no-repeat;
+        background-size: cover;
+        /* min-height: 100vh; */
+        background-position: 0 -27vh;
+    } 
+    .bg-wrap.bg2{
+        max-width: 40%;
+    }
+    .open_invi {padding-bottom: 6%;}
+    .word1{width: 5vw;}
+    .word2 {width: 4vw;}
+    .word10 {width: 3vw;}
+    .word5 {
+        width: 6vw;
+    bottom: 32%;
+    }
+    .word3 {width: 6vw;}
+    .word4{width: 11vw;}
+    .word6{width: 10vw;}
+    .word7{width: 13vw;}
+    .word8{width: 8vw;}
+    .word9{width: 7vw;}
+    .word11 {width: 5vw;}
+    .word12 {width: 3vw;}
+    .word13 {
+        width: 7vw;
+        bottom: 32%;
+    }
+    .word14 {
+        width: 6vw;
+        bottom: 25%;
     }
 }
