@@ -17,7 +17,8 @@ body {
     margin: 0 auto;
     background: url("../images/invite_paper.png") no-repeat;
     background-size: cover;
-    background-position: 0px -11vh;
+    min-height: 102vh;
+    background-position: -1vw -2vh;
 } 
 .bg-wrap.bg3{
     position: relative;
