@@ -307,6 +307,8 @@ height: 29vh; */
     width: 10vw;
     right: 20px;
     top: 10px;
+    background: none;
+    border: none;
 }
 .out img {width: 100%;}
 
