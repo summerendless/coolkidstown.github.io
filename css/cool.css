@@ -23,7 +23,7 @@ a:active, a:focus{
     -ms-user-select: none;
     user-select: none;
 }
-.bg-wrap{
+.bg-wrap.bg0{
     position: relative;
     margin: 0 auto;
     background: url("../images/bg-invite.png") no-repeat;
@@ -36,6 +36,7 @@ a:active, a:focus{
     background: url("../images/invite_paper.png") no-repeat;
     background-size: cover;
     /* min-height: 100vh; */
+    height: 100%;
     background-position: 0 -10vh;
 } 
 .bg-wrap.bg2{
@@ -142,7 +143,7 @@ height: 29vh; */
     transform: initial;
 }
 
-.word {position: absolute;}
+.word {position: absolute;z-index: 10;height: fit-content;}
 .word img{width: 100%;}
 .video {
     width: 100%;
@@ -167,58 +168,39 @@ height: 29vh; */
     display: none;
 }
 .video {display: none;}
+.answers img {width: 100%;}
 
-.word1 {
-    width: 10vw;
-    /* height: 15px; */
-    bottom: 61%;
-    left: 25%;
-}
-.word_d {
-    width: 12vw;
-    top: 30%;
-    right: 16%;
-}
-.word2 {
-    width: 8vw;
-    bottom: 55%;
-    left: 25%;
-}
-.word3 {
-    width: 10vw;
-    bottom: 54%;
-    left: 61%;
-}
-.word_l {
-    width: 12vw;
-    top: 29%;
-    right: 32%;
-}
-.word4 {
-    width: 16vw;
-    bottom: 55%;
-    left: 40%;
-}
-.word5 {
-    width: 10vw;
-    bottom: 39%;
-    left: 61%;
-}
-.word_n {
-    width: 10vw;
-    top: 22%;
-    left: 23%;
-}
-.word6 {
+.word_d {width: 12vw;top: 30%;right: 16%;}
+.word_l {width: 12vw;top: 29%;right: 32%;}
+.word_n {width: 10vw;top: 22%;left: 23%;}
+.answers .word1, .word_wrap .word1{width: 10vw;/* height: 15px; */bottom: 49%;left: 52%;}
+.answers .word2, .word_wrap .word2{width: 8vw;bottom: 43%;left: 68%;}
+.answers .word3, .word_wrap .word3{width: 10vw;bottom: 48%;left: 65%;}
+.answers .word4, .word_wrap .word4{width: 16vw;bottom: 63%;left: 27%;}
+.answers .word5, .word_wrap .word5{width: 10vw;bottom: 54%;left: 28%;}
+
+.word_wrap .word1 {bottom: 38%;}
+.word_wrap .word2 {bottom: 30%;left: 35%;}
+.word_wrap .word3 {bottom: 30%;}
+.word_wrap .word4 {bottom: 31%;left: 44%;}
+.word_wrap .word5 {bottom: 34%;left: 43%;}
+
+
+
+.answers .word6, .word_wrap .word6 {
     width: 15vw;
     bottom: 59%;
-    left: 57%;
+    left: 37%;
 }
-.word7 {
+.word_wrap .word6 {bottom: 37%;left: 23%;}
+
+.answers .word7, .word_wrap .word7 {
     width: 22vw;
-    bottom: 63%;
-    left: 36%;
+    bottom: 44%;
+    left: 27%;
 }
+.word_wrap .word7 {bottom: 36%;left: 56%;}
+
 .word_c {
     width: 10vw;
     top: 23%;
@@ -239,21 +221,27 @@ height: 29vh; */
     top: 41%;
     left: 46%;
 }
-.word8 {
+.answers .word8, .word_wrap .word8 {
     width: 14vw;
-    bottom: 47%;
-    left: 64%;
+    bottom: 43%;
+    left: 51%;
 }
-.word9 {
+.word_wrap .word8 {bottom: 40%;left: 30%;}
+
+.answers .word9, .word_wrap .word9 {
     width: 11vw;
-    bottom: 63%;
+    bottom: 54%;
     left: 64%;
 }
-.word10 {
+.word_wrap .word9 {bottom: 36%;left: 40%;}
+
+.answers .word10, .word_wrap .word10 {
     width: 7vw;
-    bottom: 41%;
-    left: 50%;
+    bottom: 49%;
+    left: 43%;
 }
+.word_wrap .word10 {bottom: 33%;left: 29%;}
+
 .word_t {
     width: 10vw;
     bottom: 50%;
@@ -264,11 +252,13 @@ height: 29vh; */
     width: 11vw;
     left: 25%;
 }
-.word11 {
+.answers .word11, .word_wrap .word11 {
     width: 10vw;
-    bottom: 46%;
-    left: 51%;
+    bottom: 53%;
+    left: 41%;
 }
+.word_wrap .word11 {bottom: 30%;left: 21%;}
+
 .word_k {
     top: 34%;
     width: 10vw;
@@ -284,21 +274,25 @@ height: 29vh; */
     top: 36%;
     left: 55%;
 }
-.word12 {
+.answers .word12, .word_wrap .word12 {
     width: 8vw;
-    bottom: 46%;
-    left: 30%;
+    bottom: 54%;
+    left: 54%;
 }
-.word13 {
+.answers .word13, .word_wrap .word13 {
     width: 10vw;
-    bottom: 50%;
-    left: 30%;
+    bottom: 59%;
+    left: 54%;
 }
-.word14 {
+.answers .word14, .word_wrap .word14 {
     width: 10vw;
-    bottom: 40%;
-    left: 25%;
+    bottom: 49%;
+    left: 31%;
 }
+.word_wrap .word12 {bottom: 33%;left: 73%;}
+.word_wrap .word13 {bottom: 39%;left: 64%;}
+.word_wrap .word14 {bottom: 32%;left: 58%;}
+
 
 .copy_right {
     position: absolute;
@@ -316,14 +310,138 @@ height: 29vh; */
 }
 .out img {width: 100%;}
 
-.click {
+#img1 {
+    /* position: absolute;
+    bottom: 10%;
+    left: 15%;
+    width: 84vw;
+    padding-bottom: 12%; */
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    width: 84vw;
+    padding-bottom: 96%;
+    background: url('../images/1.gif') no-repeat;
+    background-size: cover;
+}
+#img2{
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 100vw;
+    padding-bottom: 96%;    
+    background: url('../images/2.gif') no-repeat;
+    background-size: cover;
+
+}
+#img3 {
     position: absolute;
     bottom: 10%;
-    width: 120vw;
-    padding-bottom: 11%;
+    left: 0;
+    width: 100vw;
+    padding-bottom: 96%;   
+     background-size: cover;
+    background: url('../images/3.gif') no-repeat;
+
 }
-.click2, .click3 {display: none;}
+#next {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    width: 74%;
+    height: 48%;
+}
 .click img {width: 100%;}
+
+
+.quiz-wrapper {
+    position: relative;
+    display: block;
+    /* width: 510px;
+    height: 450px; */
+  }
+  .quiz-wrapper p.question-description {
+    background: #19286C;
+    color: white;
+    padding: 25px 20px;
+  }
+  .quiz-wrapper ul.options {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 165px;
+    list-style: none;
+    border: 1px solid #19286C;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .quiz-wrapper ul.options li {
+    border: 1px solid transparent;
+    padding: 6px 8px;
+  }
+  .quiz-wrapper ul.options li.title {
+    background: #19286C;
+    color: white;
+  }
+  .quiz-wrapper ul.options li.option {
+    display: block;
+    position: relative;
+    z-index: 50;
+    font-size: 13px;
+  }
+    .answers {
+    display: inline-block;
+    width: 335px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+.answers .target {
+    display: inline-block;
+    background: transparent;
+    position: absolute;
+    border: 1px dotted #999;
+    border-radius: 20px;
+  }
+  .quiz-wrapper button[type="submit"] {
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px;
+    background: #19286C;
+    border: none;
+    color: white;
+    font-size: 16px;
+  }
+  .lightbox-bg {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .status {
+    display: none;
+    position: absolute;
+    z-index: 110;
+    text-align: center;
+    width: 80%;
+    top: 220px;
+    left: 47px;
+  }
+  .status p {
+    background: white;
+    padding: 30px;
+  }
+
+  
+
 @media only screen and (min-width: 800px) {
     .bg-wrap {
         max-width:50%;
@@ -339,15 +457,39 @@ height: 29vh; */
         height: 28vh;
     }
     .video {top: -27%;}
-    .bg-wrap.bg2{
+    /* .bg-wrap.bg2{
         background: url("../images/invite_paper.png") no-repeat;
         background-size: cover;
-        /* min-height: 100vh; */
         background-position: 0 -27vh;
-    } 
+    }  */
     .bg-wrap.bg2{
         max-width: 40%;
     }
+
+  
+    .bg-wrap.bg2{
+        position: relative;
+        margin: 0 auto;
+        background: url("../images/whyy.GIF") no-repeat;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+    /* .bg-wrap.bg4{
+        position: relative;
+        margin: 0 auto;
+        background: url("../images/souv_bg.png") no-repeat;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+    .bg-wrap.bg3 {
+        position: relative;
+        margin: 0 auto;
+        background: url("../images/cherrytree.png") no-repeat;
+        height: 100%;
+        background-size: 100% 100%;
+    } */
+
+
     .open_invi {padding-bottom: 6%;}
     .word1{width: 5vw;}
     .word2 {width: 4vw;}

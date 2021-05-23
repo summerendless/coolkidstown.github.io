@@ -36,9 +36,9 @@
 <div class="bg-wrap bg3">
 	<div class="copy_right"><img src="./images/copy_right.png"/></div>
     <div class="out"><img src="./images/out.png"/></div>
-		<div class="click click1"><img src="./images/click1.gif"/></div>
-		<div class="click click2"><img src="./images/click2.gif"/></div>
-		<div class="click click3"><img src="./images/click3.gif"/></div>
+		<div class="click" id="img1"></div>
+		<div class="click" id="img2"></div>
+		<div class="click" id="img3"></div>
 	<div style="    position: absolute;
     right: 5%;
     width: 50%;
@@ -50,14 +50,62 @@
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 
 <script type="text/javascript">
- $(document).ready(function(){
-	$(".click1").on("click", function(e) {
-		// $(".door1").addClass("doorOpen");
-		e.preventDefault();
-		$(".click1").css("display","none");
-		$(".click2").css("display","block");
-	});
-});
+//  $(document).ready(function(){
+// 	$(".click").hide();
+// 	$(".click1").addClass();
+
+// 	$(".click1").on("click", function(e) {
+// 		// $(".door1").addClass("doorOpen");
+// 		e.preventDefault();
+// 		$(".click1").addClass("active").siblings().removeClass('active');
+// 	});
+// });
+
+// var i = 0; 
+// const backImage = document.getElementById("backimage"); 
+// const nextButton = document.getElementById("next"); 
+// function nextQuiz(i){ 
+//     // 여긴 띄어쓰면 안됨
+//     i++; 
+//     /* 스위치 구문 추가한 부분!*/ 
+//     switch(i){
+//         case 1:
+//             backImage.style.backgroundImage = "url('./images/2.gif')";
+// 			backImage.style.left = "0";
+// 			backImage.style.width = "100vw";
+//             break;
+//         case 2:
+// 			backImage.style.backgroundImage = "url('./images/2.gif')";
+// 			backImage.style.left = "0";
+// 			backImage.style.width = "100vw";
+//             break;
+//     }
+// } 
+// nextButton.addEventListener("click", function() {
+//     // 이렇게 해보죠
+//     nextQuiz(i);
+// });
+
+$(document).ready(function(){
+            /*웹페이지 열었을 때*/
+            $("#img1").show();
+            $("#img2").hide();
+			$("#img3").hide();
+
+            /*img1을 클릭했을 때 img2를 보여줌*/
+            $("#img1").click(function(){
+                $("#img1").hide();
+				$("#img3").hide();
+                $("#img2").show();
+            });
+ 
+            /*img2를 클릭했을 때 img1을 보여줌*/
+            $("#img2").click(function(){
+                $("#img3").show();
+                $("#img2").hide();
+				$("#img1").hide();
+            });
+        });
 </script>
 </body>
 </html>

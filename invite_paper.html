@@ -36,23 +36,63 @@
 <div class="bg-wrap bg1">
     <div class="copy_right"><img src="./images/copy_right.png"/></div>
     <div class="out"><img src="./images/out.png"/></div>
-    <div>
-        <div class="word word1"><img src="./images/word_and.png"/></div>
-        <div class="word word2"><img src="./images/word_bear.png"/></div>
-        <div class="word word3"><img src="./images/word_cake.png"/></div>
-        <div class="word word4"><img src="./images/word_dear.png"/></div>
-        <div class="word word5"><img src="./images/word_from.png"/></div>
-        <div class="word word6"><img src="./images/word_in.png"/></div>
-        <div class="word word7"><img src="./images/word_join.png"/></div>
-        <div class="word word8"><img src="./images/word_love.png"/></div>
-        <div class="word word9"><img src="./images/word_moon.png"/></div>
-        <div class="word word10"><img src="./images/word_music.png"/></div>
-        <div class="word word11"><img src="./images/word_sun.png"/></div>
-        <div class="word word12"><img src="./images/word_to.png"/></div>
-        <div class="word word13"><img src="./images/word_tree.png"/></div>
-        <div class="word word14"><img src="./images/word_with.png"/></div>
+    <div class="word_wrap">
+        <div class="word word1" data-target="word1"><img src="./images/word_and.png"/></div>
+        <div class="word word2" data-target="word2"><img src="./images/word_bear.png"/></div>
+        <div class="word word3" data-target="word3"><img src="./images/word_cake.png"/></div>
+        <div class="word word4" data-target="word4"><img src="./images/word_dear.png"/></div>
+        <div class="word word5" data-target="word5"><img src="./images/word_from.png"/></div>
+        <div class="word word6" data-target="word6"><img src="./images/word_in.png"/></div>
+        <div class="word word7" data-target="word7"><img src="./images/word_join.png"/></div>
+        <div class="word word8" data-target="word8"><img src="./images/word_love.png"/></div>
+        <div class="word word9" data-target="word9"><img src="./images/word_moon.png"/></div>
+        <div class="word word10" data-target="word10"><img src="./images/word_music.png"/></div>
+        <div class="word word11" data-target="word11"><img src="./images/word_sun.png"/></div>
+        <div class="word word12" data-target="word12"><img src="./images/word_to.png"/></div>
+        <div class="word word13" data-target="word13"><img src="./images/word_tree.png"/></div>
+        <div class="word word14" data-target="word14"><img src="./images/word_with.png"/></div>
     </div>
     
+    <div class="answers">
+        <ol>
+            <li><span class="target word1" data-accept="word1">&nbsp;</span></li>
+            <li><span class="target word2" data-accept="word2">&nbsp;</span></li>
+            <li><span class="target word3" data-accept="word3">&nbsp;</span></li>
+            <li><span class="target word4" data-accept="word4">&nbsp;</span></li>
+            <li><span class="target word5" data-accept="word5">&nbsp;</span></li>
+            <li><span class="target word6" data-accept="word6">&nbsp;</span></li>
+            <li><span class="target word7" data-accept="word7">&nbsp;</span></li>
+            <li><span class="target word8" data-accept="word8">&nbsp;</span></li>
+            <li><span class="target word9" data-accept="word9">&nbsp;</span></li>
+            <li><span class="target word10" data-accept="word10">&nbsp;</span></li>
+            <li><span class="target word11" data-accept="word11">&nbsp;</span></li>
+            <li><span class="target word12" data-accept="word12">&nbsp;</span></li>
+            <li><span class="target word13" data-accept="word13">&nbsp;</span></li>
+            <li><span class="target word14" data-accept="word14">&nbsp;</span></li>
+        </ol>
+    </div>
+
+
+<!-- <div class="quiz-wrapper">
+	<ul class="options">
+		<li class="option word word1" data-target="word1"><img src="./images/word_and.png"/></li>
+		<li class="option word word2" data-target="word2"><img src="./images/word_bear.png"/></li>
+	</ul>
+<div class="answers">
+	<ol>
+		<li><span class="target word word1" data-accept="word1">&nbsp;</span></li>
+		<li><span class="target word word2" data-accept="word2">&nbsp;</span></li>
+	</ol> -->
+</div>
+ <button type="submit" value="submit">Submit</button>
+ <div class="lightbox-bg"></div>
+ <div class="status confirm">
+   <p>All Answers Answered</p>
+ </div>
+ <div class="status deny">
+   <p>Answers Remain</p>
+ </div>
+</div>
 </div>
 
 <script src="js/jquery-3.5.1.min.js"></script>
@@ -62,6 +102,57 @@
 <script type="text/javascript">
     $( '.bg-wrap .word' ).draggable();
 </script>
+<script type="text/javascript">
+    /**
+ * Drag and drop quiz intended for an iBooks widget
+ */
 
+$(document).ready(function () {
+  //initialize the quiz options
+  var answersLeft = [];
+  $(".bg-wrap")
+    .find(".word")
+    .each(function (i) {
+      var $this = $(this);
+      var answerValue = $this.data("target");
+      var $target = $('.answers .target[data-accept="' + answerValue + '"]');
+      var labelText = $this.html();
+      $this.draggable({
+        revert: "invalid",
+        containment: ".bg-wrap"
+      });
+
+      if ($target.length > 0) {
+        $target.droppable({
+          accept: '.word[data-target="' + answerValue + '"]',
+          drop: function (event, ui) {
+            $this.draggable("destroy");
+            $target.droppable("destroy");
+            $this.html("&nbsp;");
+            $target.html(labelText);
+            answersLeft.splice(answersLeft.indexOf(answerValue), 1);
+          }
+        });
+        answersLeft.push(answerValue);
+      } else {
+      }
+    });
+  $('.bg-wrap button[type="submit"]').click(function () {
+    if (answersLeft.length > 0) {
+      $(".lightbox-bg").show();
+      $(".status.deny").show();
+      $(".lightbox-bg").click(function () {
+        $(".lightbox-bg").hide();
+        $(".status.deny").hide();
+        $(".lightbox-bg").unbind("click");
+      });
+    } else {
+      $(".lightbox-bg").show();
+      $(".status.confirm").show();
+    }
+  });
+});
+
+</script>
 </body>
 </html>
