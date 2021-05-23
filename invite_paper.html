@@ -84,7 +84,7 @@
 		<li><span class="target word word2" data-accept="word2">&nbsp;</span></li>
 	</ol> -->
 </div>
- <button type="submit" value="submit">Submit</button>
+ <button type="submit" value="submit">초대장 보내기</button>
  <div class="lightbox-bg"></div>
  <div class="status confirm">
    <p>All Answers Answered</p>
@@ -137,7 +137,7 @@ $(document).ready(function () {
       } else {
       }
     });
-  $('.bg-wrap button[type="submit"]').click(function () {
+  $('.bg-wrap + button[type="submit"]').click(function () {
     if (answersLeft.length > 0) {
       $(".lightbox-bg").show();
       $(".status.deny").show();
@@ -147,8 +147,9 @@ $(document).ready(function () {
         $(".lightbox-bg").unbind("click");
       });
     } else {
-      $(".lightbox-bg").show();
-      $(".status.confirm").show();
+      // $(".lightbox-bg").show();
+      // $(".status.confirm").show();
+      location.href = "index3.html";
     }
   });
 });
