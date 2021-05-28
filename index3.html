@@ -35,12 +35,12 @@
 <body>
 <div class="bg-wrap bg3">
 	<div class="copy_right"><img src="./images/copy_right.png"/></div>
-    <div class="out"><img src="./images/out.png"/></div>
+    <button type="button" onclick="downImg()" class="out"><img src="./images/out.png"/></button>
 		<div class="click" id="img1"></div>
 		<div class="click" id="img2"></div>
-		<div class="click" id="img3"></div>
+		<div class="click" id="img3"><img src="../images/3.gif"/></div>
 	<div style="    position: absolute;
-    right: 5%;
+    right: 0;
     width: 50%;
     bottom: 0;"><img src="./images/clap.gif" style="width: 100%;"/></div>
 </div>
@@ -48,7 +48,24 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/html2canvas.js"></script>
+<script type="text/javascript">
+  //이미지(png)로 다운로드
+  function downImg(){
+      html2canvas($(".bg-wrap")[0]).then(function(canvas){
+          var myImage = canvas.toDataURL();
+          downloadURI(myImage, "저장할 파일명.png") 
+      });
+  }
 
+  function downloadURI(uri, name){
+      var link = document.createElement("a")
+      link.download = name;
+      link.href = uri;
+      document.body.appendChild(link);
+      link.click();
+  }
+</script>
 <script type="text/javascript">
 //  $(document).ready(function(){
 // 	$(".click").hide();
@@ -95,11 +112,11 @@ $(document).ready(function(){
             /*img1을 클릭했을 때 img2를 보여줌*/
             $("#img1").click(function(){
                 $("#img1").hide();
-				$("#img3").hide();
                 $("#img2").show();
+                $("#img3").hide();
             });
  
-            /*img2를 클릭했을 때 img1을 보여줌*/
+            /*img2를 클릭했을 때 img3을 보여줌*/
             $("#img2").click(function(){
                 $("#img3").show();
                 $("#img2").hide();

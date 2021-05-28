@@ -307,6 +307,8 @@ height: 29vh; */
     width: 10vw;
     right: 20px;
     top: 10px;
+    background: none;
+    border: none;
 }
 .out img {width: 100%;}
 
@@ -336,12 +338,11 @@ height: 29vh; */
 }
 #img3 {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 0;
     width: 100vw;
-    padding-bottom: 96%;   
-     background-size: cover;
-    background: url('../images/3.gif') no-repeat;
+     /* background-size: cover;
+    background: url('../images/3.gif') no-repeat; */
 
 }
 #next {
@@ -406,15 +407,15 @@ height: 29vh; */
     border: 1px dotted #999;
     border-radius: 20px;
   }
-  .quiz-wrapper button[type="submit"] {
-    display: block;
-    position: relative;
-    margin: 10px auto;
-    padding: 10px;
-    background: #19286C;
+  .bg-wrap + button[type="submit"] {
     border: none;
-    color: white;
-    font-size: 16px;
+    color: #fff;
+    background: none;
+    position: absolute;
+    bottom: 10%;
+    padding-bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .lightbox-bg {
     display: none;
