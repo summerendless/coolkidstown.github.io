@@ -58,8 +58,38 @@
 <script src="js/html2canvas.js"></script>
 <script src="js/cool.js"></script>
 <script>
-    $(window).load(function() {
-    $('#bgm').get(0).play();
+//     $(window).load(function() {
+//     $('#bgm').get(0).play();
+// });
+
+const vid = "#playBear";
+
+const cardBtn2 = $('.btn_bear');
+
+function playVid(el) { 
+    el = $(el)[0];
+    el.play(); 
+} 
+
+function pauseVid(el) { 
+    el = $(el)[0];
+    el.pause(); 
+    el.currentTime = 0;
+} 
+
+function pauseAll() {
+    $('.audio').each(function(i){
+        i = i+1;
+        $('#playBear' + i)[0].pause();
+        $('#playBear' + i)[0].currentTime = 0;
+    })
+}
+
+cardBtn2.on('click', function(e){
+    e.preventDefault();
+    pauseAll();
+    // setHalfVolume();
+    playVid(vid);
 });
 </script>
 <script type="text/javascript">
