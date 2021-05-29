@@ -53,24 +53,30 @@
         <div class="word word12" data-target="word12"><img src="./images/word_to.png"/></div>
         <div class="word word13" data-target="word13"><img src="./images/word_tree.png"/></div>
         <div class="word word14" data-target="word14"><img src="./images/word_with.png"/></div>
+        <div class="word word15" data-target="word15"><img src="./images/word_us.png"/></div>
+        <div class="word word16" data-target="word16"><img src="./images/word_the.png"/></div>
+        <div class="word word17" data-target="word17"><img src="./images/word_star.png"/></div>
     </div>
     
     <div class="answers">
         <ol>
-            <li><span class="target word1" data-accept="word1">&nbsp;</span></li>
-            <li><span class="target word2" data-accept="word2">&nbsp;</span></li>
-            <li><span class="target word3" data-accept="word3">&nbsp;</span></li>
-            <li><span class="target word4" data-accept="word4">&nbsp;</span></li>
-            <li><span class="target word5" data-accept="word5">&nbsp;</span></li>
-            <li><span class="target word6" data-accept="word6">&nbsp;</span></li>
-            <li><span class="target word7" data-accept="word7">&nbsp;</span></li>
-            <li><span class="target word8" data-accept="word8">&nbsp;</span></li>
-            <li><span class="target word9" data-accept="word9">&nbsp;</span></li>
-            <li><span class="target word10" data-accept="word10">&nbsp;</span></li>
-            <li><span class="target word11" data-accept="word11">&nbsp;</span></li>
-            <li><span class="target word12" data-accept="word12">&nbsp;</span></li>
-            <li><span class="target word13" data-accept="word13">&nbsp;</span></li>
-            <li><span class="target word14" data-accept="word14">&nbsp;</span></li>
+            <li class="shadow sh-1"><span class="target word1" data-accept="word1">&nbsp;</span></li>
+            <li class="shadow sh-2"><span class="target word2" data-accept="word2">&nbsp;</span></li>
+            <li class="shadow sh-3"><span class="target word3" data-accept="word3">&nbsp;</span></li>
+            <li class="shadow sh-4"><span class="target word4" data-accept="word4">&nbsp;</span></li>
+            <li class="shadow sh-5"><span class="target word5" data-accept="word5">&nbsp;</span></li>
+            <li class="shadow sh-6"><span class="target word6" data-accept="word6">&nbsp;</span></li>
+            <li class="shadow sh-7"><span class="target word7" data-accept="word7">&nbsp;</span></li>
+            <li class="shadow sh-8"><span class="target word8" data-accept="word8">&nbsp;</span></li>
+            <li class="shadow sh-9"><span class="target word9" data-accept="word9">&nbsp;</span></li>
+            <li class="shadow sh-10"><span class="target word10" data-accept="word10">&nbsp;</span></li>
+            <li class="shadow sh-11"><span class="target word11" data-accept="word11">&nbsp;</span></li>
+            <li class="shadow sh-12"><span class="target word12" data-accept="word12">&nbsp;</span></li>
+            <li class="shadow sh-13"><span class="target word13" data-accept="word13">&nbsp;</span></li>
+            <li class="shadow sh-14"><span class="target word14" data-accept="word14">&nbsp;</span></li>
+            <li class="shadow sh-15"><span class="target word15" data-accept="word15">&nbsp;</span></li>
+            <li class="shadow sh-16"><span class="target word16" data-accept="word16">&nbsp;</span></li>
+            <li class="shadow sh-17"><span class="target word17" data-accept="word17">&nbsp;</span></li>
         </ol>
     </div>
 
@@ -86,13 +92,13 @@
 		<li><span class="target word word2" data-accept="word2">&nbsp;</span></li>
 	</ol> -->
 </div>
- <button type="submit" value="submit">초대장 보내기</button>
+ <button type="submit" value="submit"><img src="./images/btn_next.png"/></button>
  <div class="lightbox-bg"></div>
  <div class="status confirm">
    <p>All Answers Answered</p>
  </div>
  <div class="status deny">
-   <p>Answers Remain</p>
+   <p>초대장을 완성해주세요!</p>
  </div>
 </div>
 </div>
@@ -101,26 +107,8 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/html2canvas.js"></script>
-<script type="text/javascript">
-  //이미지(png)로 다운로드
-  function downImg(){
-      html2canvas($(".bg-wrap")[0]).then(function(canvas){
-          var myImage = canvas.toDataURL();
-          downloadURI(myImage, "저장할 파일명.png") 
-      });
-  }
+<script src="js/cool.js"></script>
 
-  function downloadURI(uri, name){
-      var link = document.createElement("a")
-      link.download = name;
-      link.href = uri;
-      document.body.appendChild(link);
-      link.click();
-  }
-</script>
-<script type="text/javascript">
-    $( '.bg-wrap .word' ).draggable();
-</script>
 <script type="text/javascript">
     /**
  * Drag and drop quiz intended for an iBooks widget
@@ -168,7 +156,7 @@ $(document).ready(function () {
     } else {
       // $(".lightbox-bg").show();
       // $(".status.confirm").show();
-      location.href = "index3.html";
+      location.href = "index2.html";
     }
   });
 });

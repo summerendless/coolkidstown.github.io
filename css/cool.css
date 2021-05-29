@@ -34,10 +34,11 @@ a:active, a:focus{
     position: relative;
     margin: 0 auto;
     background: url("../images/invite_paper.png") no-repeat;
-    background-size: cover;
     /* min-height: 100vh; */
+        /* background-position: 0 -10vh; */
+    background-size: cover;
+    background-position: 50% 50%;
     height: 100%;
-    background-position: 0 -10vh;
 } 
 .bg-wrap.bg2{
     position: relative;
@@ -57,6 +58,13 @@ a:active, a:focus{
     position: relative;
     margin: 0 auto;
     background: url("../images/cherrytree.png") no-repeat;
+    height: 100%;
+    background-size: 100% 100%;
+}
+.bg-wrap.bg5{
+    position: relative;
+    margin: 0 auto;
+    background: url("../images/night_bg.png") no-repeat;
     height: 100%;
     background-size: 100% 100%;
 }
@@ -146,10 +154,21 @@ height: 29vh; */
 .word {position: absolute;z-index: 10;height: fit-content;}
 .word img{width: 100%;}
 .video {
-    width: 100%;
+    /* width: 100%;
     min-height: 122vh;
     top: -20%;
-    position:relative;
+    position:relative; */
+    /* width: 100%;
+    height: 100%;
+    top: 0;
+    position: relative;
+    background-color: rgb(53,148,96); */
+
+    width: 100%;
+    min-height: 122vh;
+    height: 100%;
+    top: -11%;
+    position: relative;
 }
 .open_video {
     width: 73vw;
@@ -164,42 +183,55 @@ height: 29vh; */
     bottom: 10%;
     padding-bottom: 13%;
     left: 50%;
+    width: 15vw;
     transform: translateX(-50%);
     display: none;
 }
+.open_invi img{width: 100%;}
 .video {display: none;}
 .answers img {width: 100%;}
 
 .word_d {width: 12vw;top: 30%;right: 16%;}
 .word_l {width: 12vw;top: 29%;right: 32%;}
 .word_n {width: 10vw;top: 22%;left: 23%;}
-.answers .word1, .word_wrap .word1{width: 10vw;/* height: 15px; */bottom: 49%;left: 52%;}
-.answers .word2, .word_wrap .word2{width: 8vw;bottom: 43%;left: 68%;}
-.answers .word3, .word_wrap .word3{width: 10vw;bottom: 48%;left: 65%;}
-.answers .word4, .word_wrap .word4{width: 16vw;bottom: 63%;left: 27%;}
-.answers .word5, .word_wrap .word5{width: 10vw;bottom: 54%;left: 28%;}
 
-.word_wrap .word1 {bottom: 38%;}
-.word_wrap .word2 {bottom: 30%;left: 35%;}
-.word_wrap .word3 {bottom: 30%;}
-.word_wrap .word4 {bottom: 31%;left: 44%;}
-.word_wrap .word5 {bottom: 34%;left: 43%;}
+.word_wrap .word1 {width: 10vw;bottom: 36%;right: 19%;}
+.word_wrap .word2 {width: 8vw;bottom: 30%;left: 35%;}
+.word_wrap .word3 {width: 10vw;bottom: 30%;left: 65%;}
+.word_wrap .word4 {width: 16vw;bottom: 37%;left: 18%;}
+.word_wrap .word5 {width: 10vw;bottom: 34%;left: 43%;}
+.word_wrap .word6 {width: 6vw;bottom: 32%;left: 74%;}
+.word_wrap .word7 {width: 12vw;bottom: 36%;left: 56%;}
+.word_wrap .word8 {width: 12vw;bottom: 40%;left: 30%;}
+.word_wrap .word9 {width: 7vw;bottom: 37%;left: 45%;}
+.word_wrap .word10 {width: 6.5vw;bottom: 33%;left: 29%;}
+.word_wrap .word11 {width: 8vw;bottom: 30%;left: 21%;}
+.word_wrap .word12 {width: 7vw;bottom: 33.5%;left: 55%;}
+.word_wrap .word13 {width: 10vw;bottom: 30%;left: 54%;}
+.word_wrap .word14 { width: 10vw;bottom: 31.5%;left: 44%;}
+.word_wrap .word15 {width: 10vw;bottom: 37%;left: 34%;}
+.word_wrap .word16{width: 10vw;bottom: 43%;left: 58%;}
+.word_wrap .word17 {width: 4.5vw;bottom: 40%;left: 24%;}
 
 
+.answers .word1 {width: 12vw;bottom: 42%;left: 9%;}
+.answers .word2 {width: 9.2vw;bottom: 15%;left: 3%;}
+.answers .word3 {width: 13vw;bottom: 10%;left: 4%;}
+.answers .word4 {width: 18vw;bottom: 35%;left: 5%;}
+.answers .word5 {width: 11.5vw;bottom: 19%;left: 9%;}
+.answers .word6 {width: 8vw;bottom: 36%;left: 15%;}
+.answers .word7{width: 13.5vw;bottom: 7%;left: 5%;}
+.answers .word8{width: 14vw;bottom: 8%;left: 0;}
+.answers .word9{height: 9vw;width: 9vw;bottom: 6%;left: 6%;}
+.answers .word10 {width: 7.5vw;bottom: 7%;left: 0;}
+.answers .word11 {width: 9vw;bottom: 14%;left: 5%;}
+.answers .word12 {width: 8vw;bottom: 29%;left: 11%;}
+.answers .word13 {width: 11vw;bottom: 20%;left: 9%;}
+.answers .word14 {width: 11.5vw;bottom: 12%;left: 7%;}
+.answers .word15 {width: 11vw;bottom: 6%;left: 0%;}
+.answers .word16 {width: 13vw;bottom: 13.5%;left: 5%;}
+.answers .word17 {width: 6vw;bottom: 0;left: 3%;}
 
-.answers .word6, .word_wrap .word6 {
-    width: 15vw;
-    bottom: 59%;
-    left: 37%;
-}
-.word_wrap .word6 {bottom: 37%;left: 23%;}
-
-.answers .word7, .word_wrap .word7 {
-    width: 22vw;
-    bottom: 44%;
-    left: 27%;
-}
-.word_wrap .word7 {bottom: 36%;left: 56%;}
 
 .word_c {
     width: 10vw;
@@ -221,26 +253,6 @@ height: 29vh; */
     top: 41%;
     left: 46%;
 }
-.answers .word8, .word_wrap .word8 {
-    width: 14vw;
-    bottom: 43%;
-    left: 51%;
-}
-.word_wrap .word8 {bottom: 40%;left: 30%;}
-
-.answers .word9, .word_wrap .word9 {
-    width: 11vw;
-    bottom: 54%;
-    left: 64%;
-}
-.word_wrap .word9 {bottom: 36%;left: 40%;}
-
-.answers .word10, .word_wrap .word10 {
-    width: 7vw;
-    bottom: 49%;
-    left: 43%;
-}
-.word_wrap .word10 {bottom: 33%;left: 29%;}
 
 .word_t {
     width: 10vw;
@@ -252,12 +264,6 @@ height: 29vh; */
     width: 11vw;
     left: 25%;
 }
-.answers .word11, .word_wrap .word11 {
-    width: 10vw;
-    bottom: 53%;
-    left: 41%;
-}
-.word_wrap .word11 {bottom: 30%;left: 21%;}
 
 .word_k {
     top: 34%;
@@ -274,24 +280,6 @@ height: 29vh; */
     top: 36%;
     left: 55%;
 }
-.answers .word12, .word_wrap .word12 {
-    width: 8vw;
-    bottom: 54%;
-    left: 54%;
-}
-.answers .word13, .word_wrap .word13 {
-    width: 10vw;
-    bottom: 59%;
-    left: 54%;
-}
-.answers .word14, .word_wrap .word14 {
-    width: 10vw;
-    bottom: 49%;
-    left: 31%;
-}
-.word_wrap .word12 {bottom: 33%;left: 73%;}
-.word_wrap .word13 {bottom: 39%;left: 64%;}
-.word_wrap .word14 {bottom: 32%;left: 58%;}
 
 
 .copy_right {
@@ -311,7 +299,16 @@ height: 29vh; */
     border: none;
 }
 .out img {width: 100%;}
-
+.btn_next {
+    position: absolute;
+    width: 15vw;
+    right: 20px;
+    bottom: 10px;
+    background: none;
+    border: none;
+    z-index: 100;
+}
+.btn_next img {width: 100%;}
 #img1 {
     /* position: absolute;
     bottom: 10%;
@@ -404,11 +401,11 @@ height: 29vh; */
     display: inline-block;
     background: transparent;
     position: absolute;
-    border: 1px dotted #999;
-    border-radius: 20px;
+    /* border: 1px dotted #999; */
+    /* border-radius: 20px; */
   }
   .bg-wrap + button[type="submit"] {
-    border: none;
+    /* border: none;
     color: #fff;
     background: none;
     position: absolute;
@@ -416,7 +413,20 @@ height: 29vh; */
     padding-bottom: 13%;
     left: 50%;
     transform: translateX(-50%);
+    width: 15vw; */
+    border: none;
+    color: #fff;
+    background: none;
+    position: absolute;
+    bottom: -3%;
+    padding-bottom: 13%;
+    right: 0;
+    left: auto;
+    z-index: 100;
+    width: 15vw;
+    transform: translateX(-50%);
   }
+  .bg-wrap + button[type="submit"] img {width: 100%;}
   .lightbox-bg {
     display: none;
     position: absolute;
@@ -433,31 +443,244 @@ height: 29vh; */
     z-index: 110;
     text-align: center;
     width: 80%;
-    top: 220px;
-    left: 47px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .status p {
     background: white;
     padding: 30px;
   }
 
-  
+  .shadow.sh-4 {
+      background: url("../images/sh-word-dear.png") no-repeat;
+      width: 20vw;
+      height: 12vw;
+      bottom: 59.5%;
+      left: 26%;
+      position: absolute;
+      background-size: contain;
+  }
+  .shadow.sh-1 {
+    background: url("../images/sh-word-and.png") no-repeat;
+    width: 14vw;
+    height: 12vw;
+    bottom: 45%;
+    left: 51%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-2 {
+    background: url("../images/sh-word-bear.png") no-repeat;
+    width: 10vw;
+    height: 10vw;
+    bottom: 38%;
+    right: 22%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-3 {
+    background: url("../images/sh-word-cake.png") no-repeat;
+    width: 14vw;
+    height: 10vw;
+    bottom: 46.5%;
+    right: 21.5%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-5 {
+    background: url("../images/sh-word-from.png") no-repeat;
+    width: 13.5vw;
+    height: 8vw;
+    bottom: 51.7%;
+    left: 24%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-6 {
+    background: url("../images/sh-word-in.png") no-repeat;
+    width: 9vw;
+    height: 12vw;
+    bottom: 54.5%;
+    left: 28%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-7 {
+    background: url("../images/sh-word-join.png") no-repeat;
+    width: 14vw;
+    height: 8vw;
+    bottom: 42%;
+    left: 30%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-8 {
+    background: url("../images/sh-word-love.png") no-repeat;
+    width: 16vw;
+    height: 6vw;
+    bottom: 39%;
+    right: 31%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-9 {
+    background: url("../images/sh-word-moon.png") no-repeat;
+    width: 11vw;
+    height: 10vw;
+    bottom: 52%;
+    right: 28%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-10 {
+    background: url("../images/sh-word-music.png") no-repeat;
+    width: 9vw;
+    height: 9vw;
+    bottom: 46.5%;
+    left: 41%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-11 {
+    background: url("../images/sh-word-sun.png") no-repeat;
+    width: 10vw;
+    height: 9vw;
+    bottom: 52%;
+    right: 51%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-12 {
+    background: url("../images/sh-word-to.png") no-repeat;
+    width: 10vw;
+    height: 9vw;
+    bottom: 51.5%;
+    right: 40%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-13 {
+    background: url("../images/sh-word-tree.png") no-repeat;
+    width: 13vw;
+    height: 9vw;
+    bottom: 57.5%;
+    right: 30%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-14 {
+    background: url("../images/sh-word-with.png") no-repeat;
+    width: 14vw;
+    height: 7vw;
+    bottom: 47.5%;
+    left: 26%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-15 {
+    background: url("../images/sh-word-us.png") no-repeat;
+    width: 14vw;
+    height: 7vw;
+    bottom: 42%;
+    left: 45%;
+    position: absolute;
+    background-size: contain;
+}
 
+
+.shadow.sh-16 {
+    background: url("../images/sh-word-the.png") no-repeat;
+    width: 15vw;
+    height: 9vw;
+    bottom: 56.5%;
+    left: 40%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-17 {
+    background: url("../images/sh-word-star.png") no-repeat;
+    width: 8vw;
+    height: 9vw;
+    bottom: 53.5%;
+    right: 21.5%;
+    position: absolute;
+    background-size: contain;
+}
+
+.btn_bear {
+    right: 0;
+    position: absolute;
+    width: 58vw;
+    bottom: 14%;
+}
+.btn_bear img{
+    width: 100%;
+}
+
+.btn_fire {
+    left: 5%;
+    position: absolute;
+    width: 30vw;
+    bottom: 14%;
+}
+.btn_fire img{
+    width: 100%;
+}
+.btn_light {    width: 20vw;
+    right: 15%;
+    top: 20%;}
+.btn_music {
+
+    width: 15vw;
+    left: 15%;
+    top: 20%;
+
+}
+.btn_moon{
+    width: 12vw;
+    left: 36%;
+    top: 25%;
+}
+.btn_music1 {
+
+    top: 40%;
+    width: 12vw;
+    left: 40%;
+
+}
+.btn_as {
+    right: 20%;
+    width: 17vw;
+    top: 32%;
+}
 @media only screen and (min-width: 800px) {
     .bg-wrap {
-        max-width:50%;
+        max-width:40%;
         margin:  0 auto;
         
     }
     .door1, .door2 {
-        width: 33vw;
-    height: 28vh;
+        width: 29vw;
+        height: 36vh;
     }
     .door-back {
-        width: 33vw;
-        height: 28vh;
+        width: 29vw;
+        height: 36vh;
     }
-    .video {top: -27%;}
+    .open_video{
+        width: 33vw;
+        height: 30vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .video {    height: 202%;
+        top: -55%;}
+    .out {width: 4vw;}
+    .copy_right {
+        width: 17vw;
+    }
     /* .bg-wrap.bg2{
         background: url("../images/invite_paper.png") no-repeat;
         background-size: cover;
@@ -491,7 +714,7 @@ height: 29vh; */
     } */
 
 
-    .open_invi {padding-bottom: 6%;}
+    .open_invi {padding-bottom: 6%;width: 10vw;}
     .word1{width: 5vw;}
     .word2 {width: 4vw;}
     .word10 {width: 3vw;}
@@ -515,4 +738,322 @@ height: 29vh; */
         width: 6vw;
         bottom: 25%;
     }
+
+
+    .word_oo {width: 5vw;}
+    .word_n {width: 5vw;}
+    .word_i {width: 5vw;}
+    .word_c {width: 5vw;}
+    .word_k {width: 5vw;}
+    .word_d {width: 5vw;}
+    .word_l {width: 5vw;}
+    .word_o {width: 5vw;}
+    .word_ooo {width: 5vw;}
+    .word_s {width: 5vw;}
+    .word_t {width: 5vw;}
+    .word_w {width: 5vw;}
+    .bg-wrap + button[type="submit"]{
+        border: none;
+        color: rgb(255, 255, 255);
+        background: none;
+        position: absolute;
+        bottom: 0px;
+        padding-bottom: 1%;
+        right: 30%;
+        left: auto;
+        z-index: 100;
+        width: 6vw;
+        transform: translateX(-50%);
+    }
+
+
+.word_wrap .word1 {width: 5vw;bottom: 33%;right: 19%;}
+.word_wrap .word2 {width: 4vw;bottom: 27%;left: 32%;}
+.word_wrap .word3 {width: 5vw;bottom: 27%;left: 65%;}
+.word_wrap .word4 {width: 8vw;bottom: 36%;left: 18%;}
+.word_wrap .word5 {width: 5vw;bottom: 30%;left: 43%;}
+.word_wrap .word6 {width: 3vw;bottom: 29%;left: 74%;}
+.word_wrap .word7 {width: 6vw;bottom: 31%;left: 60%;}
+.word_wrap .word8 {width: 6vw;bottom: 37%;left: 35%;}
+.word_wrap .word9 {width: 4vw;bottom: 34%;left: 45%;}
+.word_wrap .word10 {width: 3vw;bottom: 31%;left: 29%;}
+.word_wrap .word11 {width: 4vw;bottom: 27%;left: 21%;}
+.word_wrap .word12 {width: 3vw;bottom: 32%;left: 54%;}
+.word_wrap .word13 {width: 5vw;bottom: 27%;left: 54%;}
+.word_wrap .word14 { width: 5vw;bottom: 27%;left: 42%;}
+.word_wrap .word15 {width: 5vw;bottom: 33%;left: 34%;}
+.word_wrap .word16{width: 5vw;bottom: 43%;left: 58%;}
+.word_wrap .word17 {width: 2vw;bottom: 43%;left: 22%;}
+
+.answers .word1 {    width: 5.5vw;
+    height: 100%;
+    top: 16%;
+    left: 10%;}
+.answers .word2 {    width: 4vw;
+    height: 3vw;
+    bottom: 25%;
+    left: 10%;}
+.answers .word3 {width: 6vw;
+    height: 100%;
+    top: 10%;
+    left: 8%;}
+.answers .word4 {width: 8vw;
+    height: 100%;
+    top: 10%;
+    left: 8%;
+    bottom: auto;
+}
+.answers .word5 {    width: 6vw;
+    height: 100%;
+    top: 12%;
+    left: 10%;
+bottom: auto;}
+.answers .word6 { width: 3vw;
+    height: 100%;
+    bottom: 0;
+    left: 20%;}
+.answers .word7{width: 7vw;
+    height: 100%;
+    top: 14%;
+    left: 10%;
+    bottom: auto;}
+.answers .word8{    width: 8vw;
+    height: 100%;
+    top: 12%;
+    left: 6%;}
+.answers .word9{
+    height: 100%;
+    bottom: 0;
+    left: 10%;
+    width: 4.5vw;
+}
+.answers .word10 {    width: 3.5vw;
+    height: 100%;
+    top: 10%;
+    left: 8%;}
+.answers .word11 {    width: 4vw;
+    height: 100%;
+    top: 10%;
+    bottom: auto;
+    left: 10%;}
+.answers .word12 {    width: 3vw;
+    height: 100%;
+    top: 19%;
+    left: 19%;}
+.answers .word13 {width: 5.5vw;
+    height: 100%;
+    top: 10%;
+    left: 6%;}
+.answers .word14 {width: 6.2vw;
+    height: 100%;
+    top: 18%;
+    left: 10%;
+bottom:auto}
+.answers .word15 {width: 6vw;     height: 100%;
+    top: 14%;left:0;bottom: auto;}
+.answers .word16 {width: 6vw; height: 100%;top: 6%;
+    bottom: auto;
+    left: 5%;}
+.answers .word17 {    width: 2vw;
+    height: 100%;
+    bottom: 0;
+    left: 10%;}
+/* .answers .word1 {width: 6vw;bottom: 42%;left: 9%;}
+.answers .word2 {width: 4vw;bottom: 15%;left: 3%;}
+.answers .word3 {width: 6vw;bottom: 10%;left: 4%;}
+.answers .word4 {width: 8vw;bottom: 35%;left: 5%;}
+.answers .word5 {width: 6vw;bottom: 19%;left: 9%;}
+.answers .word6 {width: 4vw;bottom: 36%;left: 15%;}
+.answers .word7{width: 6vw;bottom: 7%;left: 5%;}
+.answers .word8{width: 7vw;bottom: 8%;left: 0;}
+.answers .word9{height: 4vw;width: 9vw;bottom: 6%;left: 6%;}
+.answers .word10 {width: 4vw;bottom: 7%;left: 0;}
+.answers .word11 {width: 4vw;bottom: 14%;left: 5%;}
+.answers .word12 {width: 4vw;bottom: 29%;left: 11%;}
+.answers .word13 {width: 6vw;bottom: 32%;left: 2%;}
+.answers .word14 {width: 6vw;bottom: 12%;left: 7%;}
+.answers .word15 {width: 6vw;bottom: 6%;left: 0%;}
+.answers .word16 {width: 6vw;bottom: 40.5%;left: 5%;}
+.answers .word17 {width: 3vw;bottom: 0;left: 3%;} */
+
+.shadow.sh-4 {
+    background: url("../images/sh-word-dear.png") no-repeat;
+    width: 10vw;
+    height: 4vw;
+    bottom: 68%;
+    left: 26%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-1 {
+  background: url("../images/sh-word-and.png") no-repeat;
+  width: 7vw;
+  height: 4vw;
+  bottom: 50%;
+  left: 51%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-2 {
+  background: url("../images/sh-word-bear.png") no-repeat;
+  width: 5vw;
+  height: 5vw;
+  bottom: 38%;
+  right: 22%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-3 {
+  background: url("../images/sh-word-cake.png") no-repeat;
+  width: 7vw;
+  height: 5vw;
+  bottom: 48%;
+  right: 22%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-5 {
+  background: url("../images/sh-word-from.png") no-repeat;
+  width: 8vw;
+  height: 4vw;
+  bottom: 56.5%;
+  left: 24%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-6 {
+  background: url("../images/sh-word-in.png") no-repeat;
+  width: 4vw;
+  height: 4vw;
+  bottom: 61.5%;
+  left: 36%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-7 {
+  background: url("../images/sh-word-join.png") no-repeat;
+  width: 8vw;
+  height: 5vw;
+  bottom: 40%;
+  left: 25%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-8 {
+  background: url("../images/sh-word-love.png") no-repeat;
+  width: 9vw;
+    height: 4vw;
+    bottom: 35.5%;
+    right: 31%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-9 {
+  background: url("../images/sh-word-moon.png") no-repeat;
+  width: 5vw;
+  height: 5vw;
+  bottom: 57%;
+  right: 28%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-10 {
+  background: url("../images/sh-word-music.png") no-repeat;
+  width: 5vw;
+  height: 5vw;
+  bottom: 49%;
+  left: 40%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-11 {
+  background: url("../images/sh-word-sun.png") no-repeat;
+  width: 5vw;
+    height: 5vw;
+    bottom: 56%;
+    right: 50%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-12 {
+  background: url("../images/sh-word-to.png") no-repeat;
+  width: 4.5vw;
+  height: 3vw;
+  bottom: 58.5%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-13 {
+  background: url("../images/sh-word-tree.png") no-repeat;
+ 
+  width: 7vw;
+  height: 4vw;
+  bottom: 64.5%;
+  right: 25%;
+
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-14 {
+  background: url("../images/sh-word-with.png") no-repeat;
+  width: 8vw;
+    height: 4vw;
+    bottom: 49.5%;
+    left: 23%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-15 {
+  background: url("../images/sh-word-us.png") no-repeat;
+  width: 7vw;
+    height: 4vw;
+    bottom: 41%;
+    left: 42.5%;
+  position: absolute;
+  background-size: contain;
+}
+
+
+.shadow.sh-16 {
+  background: url("../images/sh-word-the.png") no-repeat;
+  width: 7vw;
+  height: 4vw;
+  bottom: 62.5%;
+  left: 47%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-17 {
+  background: url("../images/sh-word-star.png") no-repeat;
+  width: 2.5vw;
+    height: 3.5vw;
+    bottom: 59.5%;
+    right: 24%;
+  position: absolute;
+  background-size: contain;
+}
+
+
+.souv_house {
+    width: 75%;
+    /* height: 10vh; */
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+#img1 {width: 33vw;}
+#img2 {width: 40vw;}
+#img3 {width: 40vw;}
+.btn_next {width: 6vw;}
+.btn_bear{width: 24vw;}
+.btn_fire{width: 10vw;}
+.btn_music {width: 6vw;}
+.btn_music1 {width: 4vw;}
+.btn_moon {width: 6vw;}
+.btn_as {width: 8vw;}
+.btn_light {width: 8vw;}
+}
+
+@media (min-width: 1281px) {
+
 }
