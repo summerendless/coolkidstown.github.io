@@ -54,11 +54,11 @@
 		<div class="door2"></div>
 		<a class="open_video"></a>
 	</div>
-	<video playsinline id="myVideo" class="video audio" id="cardAudio1"><source src="./images/invite.mp4" type="video/mp4"></video>         
 	<a class="open_invi" href="invite_paper.html"><img src="./images/btn_next.png"/></a>
 	<iframe src="./images/SILENCE.MP3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
     <audio id="bgmAudio" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/wav"></audio>    
-    
+	<video playsinline id="myVideo" class="video audio" id="cardAudio1"><source src="./images/invite.mp4" type="video/mp4"></video>         
+
 </div>
 
 <script src="js/jquery-3.5.1.min.js"></script>
@@ -72,7 +72,7 @@
 
     if (agent.indexOf("chrome") != -1) { //
         playVoice.outerHTML = ""; 
-        var weaList = '<iframe style="width:1px; height:1px;" src="./images/voice.mp3" allow="autoplay">' 
+        var weaList = '<iframe style="width:1px; height:1px;" src="./images/SILENCE.MP3" allow="autoplay">' 
         $('#viewport').append(weaList) 
     } else { 
         playVoice.play(); 
