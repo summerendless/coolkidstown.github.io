@@ -1,10 +1,4 @@
 
-const bgm = "#bgm";
-
-$( document ).ready(function() {
-    $(bgm).volume = 0.8;
-});
-
 //이미지(png)로 다운로드
 function downImg(){
     html2canvas($(".bg-wrap")[0]).then(function(canvas){

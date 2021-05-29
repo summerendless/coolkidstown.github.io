@@ -45,8 +45,8 @@
     right: 0;
     width: 50%;
     bottom: 0;"><img src="./images/clap.gif" style="width: 100%;"/></div>
-        <iframe src="./images/SILENCE.MP3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
-        <audio id="bgm" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/wav"></audio>    
+    <iframe src="./images/SILENCE.MP3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
+    <audio id="bgm" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/wav"></audio>    
 </div>
 
 <script src="js/jquery-3.5.1.min.js"></script>
@@ -54,7 +54,11 @@
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/html2canvas.js"></script>
 <script src="js/cool.js"></script>
-
+<script>
+    $(window).load(function() {
+    $('#bgm').get(0).play();
+});
+</script>
 <script type="text/javascript">
     function btnNext(){
         location.href = "index4.html";

@@ -57,7 +57,7 @@
 	<video playsinline id="myVideo" class="video audio" id="cardAudio1"><source src="./images/invite.mp4" type="video/mp4"></video>         
 	<a class="open_invi" href="invite_paper.html"><img src="./images/btn_next.png"/></a>
 	<iframe src="./images/SILENCE.MP3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
-    <audio id="bgm" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/wav"></audio>    
+    <audio id="bgmAudio" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/wav"></audio>    
     
 </div>
 
@@ -65,7 +65,20 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/cool.js"></script>
+<script type="text/javascript">
 
+	playMain.onended = function(){ 
+    var agent = navigator.userAgent.toLowerCase(); 
+
+    if (agent.indexOf("chrome") != -1) { //
+        playVoice.outerHTML = ""; 
+        var weaList = '<iframe style="width:1px; height:1px;" src="./images/voice.mp3" allow="autoplay">' 
+        $('#viewport').append(weaList) 
+    } else { 
+        playVoice.play(); 
+    }
+}
+</script>
 <script type="text/javascript">
 	$(function(){
 		var open_video = $('.open_video');
