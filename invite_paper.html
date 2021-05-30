@@ -159,19 +159,20 @@ $(document).ready(function () {
       }
     });
   $('.bg-wrap + button[type="submit"]').click(function () {
-    if (answersLeft.length > 0) {
-      $(".lightbox-bg").show();
-      $(".status.deny").show();
-      $(".lightbox-bg").click(function () {
-        $(".lightbox-bg").hide();
-        $(".status.deny").hide();
-        $(".lightbox-bg").unbind("click");
-      });
-    } else {
-      // $(".lightbox-bg").show();
-      // $(".status.confirm").show();
-      location.href = "index2.html";
-    }
+    location.href = "index2.html";
+    // if (answersLeft.length > 0) {
+    //   $(".lightbox-bg").show();
+    //   $(".status.deny").show();
+    //   $(".lightbox-bg").click(function () {
+    //     $(".lightbox-bg").hide();
+    //     $(".status.deny").hide();
+    //     $(".lightbox-bg").unbind("click");
+    //   });
+    // } else {
+    //   // $(".lightbox-bg").show();
+    //   // $(".status.confirm").show();
+    //   location.href = "index2.html";
+    // }
   });
 });
 
