@@ -199,59 +199,87 @@ height: 29vh; */
 .word_n {width: 10vw;top: 22%;left: 23%;}
 
 .word_wrap .word1 {width: 10vw;bottom: 36%;right: 19%;}
-.word_wrap .word2 {width: 8vw;bottom: 30%;left: 35%;}
-.word_wrap .word3 {width: 10vw;bottom: 30%;left: 65%;}
+.word_wrap .word2 {width: 8vw;bottom: 33.5%;left: 42%;}
+.word_wrap .word3 {width: 10.5vw;bottom: 32.5%;left: 71%;}
 .word_wrap .word4 {width: 16vw;bottom: 37%;left: 18%;}
-.word_wrap .word5 {width: 10vw;bottom: 34%;left: 43%;}
-.word_wrap .word6 {width: 6vw;bottom: 32%;left: 74%;}
+.word_wrap .word5 {width: 10vw;bottom: 29%;left: 33%;}
+.word_wrap .word6 {width: 6vw;bottom: 32%;left: 14%;}
 .word_wrap .word7 {width: 12vw;bottom: 36%;left: 56%;}
-.word_wrap .word8 {width: 12vw;bottom: 40%;left: 30%;}
-.word_wrap .word9 {width: 7vw;bottom: 37%;left: 45%;}
+.word_wrap .word8 {width: 12vw;bottom: 39.5%;left: 34%;}
+.word_wrap .word9 {width: 7vw;bottom: 37%;left: 48%;}
 .word_wrap .word10 {width: 6.5vw;bottom: 33%;left: 29%;}
 .word_wrap .word11 {width: 8vw;bottom: 30%;left: 21%;}
-.word_wrap .word12 {width: 7vw;bottom: 33.5%;left: 55%;}
-.word_wrap .word13 {width: 10vw;bottom: 30%;left: 54%;}
-.word_wrap .word14 { width: 10vw;bottom: 31.5%;left: 44%;}
-.word_wrap .word15 {width: 10vw;bottom: 37%;left: 34%;}
-.word_wrap .word16{width: 10vw;bottom: 43%;left: 58%;}
-.word_wrap .word17 {width: 4.5vw;bottom: 40%;left: 24%;}
+.word_wrap .word12 {width: 7vw;bottom: 32.5%;left: 62%;}
+.word_wrap .word13 {width: 11vw;bottom: 28%;left: 59%;}
+.word_wrap .word14 { width: 11vw;bottom: 30.5%;left: 47%;}
+.word_wrap .word15 {width: 10vw;bottom: 34.5%;left: 82%;}
+.word_wrap .word16{width: 10vw;bottom: 30%;left: 78%;}
+.word_wrap .word17 {width: 4.5vw;bottom: 39%;left: 84%;}
 
 
-.answers .word1 {width: 12vw;
-    top: 10%;
-    left: 9%;
+.answers .word1 {    width: 13vw;
+    top: 15%;
+    left: 11%;
     height: 100%;}
-.answers .word2 {width: 9.2vw;bottom: 15%;left: 3%;}
-.answers .word3 {width: 13vw;
+.answers .word2 {width: 10vw;height:100%;top: 10%;left: 3%;}
+.answers .word3 {width: 14vw;
     height: 100%;
     top: 10%;
     left: 4%;}
-.answers .word4 {width: 18vw;bottom: 35%;left: 5%;}
-.answers .word5 {width: 11.5vw;
+.answers .word4 {    width: 21vw;
+    height: 100%;
+    top: 15%;
+    left: 10%;}
+.answers .word5 {    width: 15vw;
+    height: 100%;
     top: 19%;
     bottom: 0;
-    left: 9%;}
-.answers .word6 {width: 8vw;height:100%;bottom: 0;left: 15%;}
-.answers .word7{    width: 13.5vw;
+    left: 10%;}
+.answers .word6 {width: 9vw;
+    height: 100%;
+    bottom: 0;
+    left: 15%;}
+.answers .word7{    width: 14.5vw;
+    height: 100%;
+    top: 15%;
+    left: 7%;}
+.answers .word8{    width: 16vw;
     height: 100%;
     top: 10%;
+    left: 9%;}
+.answers .word9{height: 100%;width: 10vw;top: 3%;left: 10%;}
+.answers .word10 {    width: 7.5vw;
+    height: 100%;
+    top: 9%;
     left: 5%;}
-.answers .word8{width: 14vw;height:100%;bottom: 0;left: 0;}
-.answers .word9{height: 100%;width: 9vw;bottom: 0;left: 6%;}
-.answers .word10 {width: 7.5vw;bottom: 7%;left: 0;}
-.answers .word11 {width: 9vw;bottom: 14%;left: 5%;}
-.answers .word12 {width: 9vw;
-    height: 6vw;
-    bottom: 20%;
+.answers .word11 {width: 10vw;
+    height: 100%;
+    top: 10%;
+    left: 8%;}
+.answers .word12 {    width: 10vw;
+    height: 100%;
+    top: 20%;
+    left: 15%;}
+.answers .word13 {    height: 100%;
+    width: 16vw;
+    top: 12%;
     left: 6%;}
-.answers .word13 {height: 8vw;width: 13vw;bottom: 5%;left: 2%;}
-.answers .word14 {    width: 11.5vw;
+.answers .word14 {     width: 14.5vw;
     height: 100%;
     top: 20%;
     left: 7%;}
-.answers .word15 {width: 11vw;bottom: 6%;left: 0%;}
-.answers .word16 {width: 13vw;bottom: 13.5%;left: 5%;}
-.answers .word17 {width: 6vw;bottom: 0;left: 3%;}
+.answers .word15 {height: 100%;
+    width: 12vw;
+    top: 14%;
+    left: 2%;}
+.answers .word16 {    width: 14vw;
+    top: 10%;
+    height: 100%;
+    left: 10%;}
+.answers .word17 {    width: 6vw;
+    height: 100%;
+    top: 12%;
+    left: 13%;}
 
 
 .word_c {
@@ -338,7 +366,7 @@ height: 29vh; */
     padding-bottom: 12%; */
     position: absolute;
     bottom: 15%;
-    left: 10%;
+    left: 13%;
     width: 80vw;
     padding-bottom: 96%;
     background: url('../images/1.gif') no-repeat;
@@ -347,8 +375,8 @@ height: 29vh; */
 #img2{
     position: absolute;
     bottom: 15%;
-    left: -6%;
-    width: 98vw;
+    left: -2%;
+    width: 97vw;
     padding-bottom: 96%;    
     background: url('../images/2.gif') no-repeat;
     background-size: contain;
@@ -359,14 +387,14 @@ height: 29vh; */
     bottom: 15%;
     left: 0;
     width: 100vw; */
-     /* background-size: cover;
+     /* background-size: contain;
     background: url('../images/3.gif') no-repeat; */
     position: absolute;
-    bottom: 15%;
-    left: -6%;
-    width: 98vw;
+    bottom: 17%;
+    left: -2%;
+    width: 97vw;
     padding-bottom: 96%;    
-    background: url('../images/2.gif') no-repeat;
+    background: url('../images/3.gif') no-repeat;
     background-size: contain;
 
 }
@@ -482,158 +510,159 @@ height: 29vh; */
 
   .shadow.sh-4 {
       background: url("../images/sh-word-dear.png") no-repeat;
-      width: 20vw;
-      height: 12vw;
-      bottom: 59.5%;
-      left: 26%;
+      width: 27vw;
+      height: 11vw;
+      bottom: 66%;
+      left: 18%;
+  
       position: absolute;
-      background-size: contain;
+      background-size: cover;
   }
   .shadow.sh-1 {
     background: url("../images/sh-word-and.png") no-repeat;
-    width: 14vw;
+    width: 16.5vw;
     height: 9vw;
-    bottom: 47%;
-    left: 51%;
+    bottom: 49%;
+    left: 52%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-2 {
     background: url("../images/sh-word-bear.png") no-repeat;
-    width: 10vw;
+    width: 11vw;
     height: 10vw;
-    bottom: 38%;
-    right: 22%;
+    bottom: 39%;
+    right: 19%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-3 {
     background: url("../images/sh-word-cake.png") no-repeat;
-    width: 14vw;
-    height: 10vw;
-    bottom: 46.5%;
-    right: 21.5%;
+    width: 16vw;
+    height: 11vw;
+    bottom: 48.5%;
+    right: 15.5%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-5 {
     background: url("../images/sh-word-from.png") no-repeat;
-    width: 13.5vw;
-    height: 8vw;
-    bottom: 51.7%;
-    left: 24%;
+    width: 18vw;
+    height: 10vw;
+    bottom: 54%;
+    left: 18%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-6 {
     background: url("../images/sh-word-in.png") no-repeat;
-    width: 9vw;
+    width: 13vw;
     height: 12vw;
-    bottom: 54.5%;
-    left: 28%;
+    bottom: 59.5%;
+    left: 24.5%;
     position: absolute;
     background-size: contain;
 }
 .shadow.sh-7 {
     background: url("../images/sh-word-join.png") no-repeat;
-    width: 14vw;
-    height: 8vw;
-    bottom: 42%;
-    left: 30%;
+    width: 16vw;
+    height: 9vw;
+    bottom: 43%;
+    left: 26%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-8 {
     background: url("../images/sh-word-love.png") no-repeat;
-    width: 16vw;
-    height: 6vw;
+    width: 17vw;
+    height: 8vw;
     bottom: 39%;
     right: 31%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-9 {
     background: url("../images/sh-word-moon.png") no-repeat;
-    width: 11vw;
-    height: 10vw;
-    bottom: 52%;
-    right: 28%;
+    width: 12vw;
+    height: 12vw;
+    bottom: 54.5%;
+    right: 23%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-10 {
     background: url("../images/sh-word-music.png") no-repeat;
-    width: 9vw;
-    height: 9vw;
-    bottom: 46.5%;
+    width: 10vw;
+    height: 11vw;
+    bottom: 48%;
     left: 41%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-11 {
     background: url("../images/sh-word-sun.png") no-repeat;
-    width: 10vw;
-    height: 9vw;
-    bottom: 52%;
+    width: 12vw;
+    height: 11vw;
+    bottom: 54.5%;
     right: 51%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-12 {
     background: url("../images/sh-word-to.png") no-repeat;
-    width: 10vw;
-    height: 9vw;
-    bottom: 51.5%;
-    right: 40%;
+    width: 14vw;
+    height: 10vw;
+    bottom: 55%;
+    right: 36%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-13 {
     background: url("../images/sh-word-tree.png") no-repeat;
-    width: 13vw;
-    height: 9vw;
-    bottom: 57.5%;
-    right: 30%;
+    width: 18vw;
+    height: 11vw;
+    bottom: 61%;
+    right: 24%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-14 {
     background: url("../images/sh-word-with.png") no-repeat;
-    width: 14vw;
-    height: 7vw;
-    bottom: 47.5%;
-    left: 26%;
+    width: 18vw;
+    height: 9vw;
+    bottom: 48.5%;
+    left: 22%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-15 {
     background: url("../images/sh-word-us.png") no-repeat;
     width: 14vw;
-    height: 7vw;
-    bottom: 42%;
-    left: 45%;
+    height: 8vw;
+    bottom: 43.5%;
+    left: 44%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 
 
 .shadow.sh-16 {
     background: url("../images/sh-word-the.png") no-repeat;
-    width: 15vw;
+    width: 17vw;
     height: 9vw;
-    bottom: 56.5%;
+    bottom: 61%;
     left: 40%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 .shadow.sh-17 {
     background: url("../images/sh-word-star.png") no-repeat;
     width: 8vw;
-    height: 9vw;
-    bottom: 53.5%;
-    right: 21.5%;
+    height: 11vw;
+    bottom: 56%;
+    right: 16.5%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
 }
 
 .btn_bear {
