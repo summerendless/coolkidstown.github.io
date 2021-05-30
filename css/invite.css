@@ -1,0 +1,409 @@
+.answers img {width: 100%;}
+
+.word_wrap .word1 {width: 10vw;bottom: 36%;right: 19%;}
+.word_wrap .word2 {width: 8vw;bottom: 33.5%;left: 42%;}
+.word_wrap .word3 {width: 10.5vw;bottom: 32.5%;left: 71%;}
+.word_wrap .word4 {width: 16vw;bottom: 37%;left: 18%;}
+.word_wrap .word5 {width: 10vw;bottom: 29%;left: 33%;}
+.word_wrap .word6 {width: 6vw;bottom: 32%;left: 14%;}
+.word_wrap .word7 {width: 12vw;bottom: 36%;left: 56%;}
+.word_wrap .word8 {width: 12vw;bottom: 39.5%;left: 34%;}
+.word_wrap .word9 {width: 7vw;bottom: 37%;left: 48%;}
+.word_wrap .word10 {width: 6.5vw;bottom: 33%;left: 29%;}
+.word_wrap .word11 {width: 8vw;bottom: 30%;left: 21%;}
+.word_wrap .word12 {width: 7vw;bottom: 32.5%;left: 62%;}
+.word_wrap .word13 {width: 11vw;bottom: 28%;left: 59%;}
+.word_wrap .word14 { width: 11vw;bottom: 30.5%;left: 47%;}
+.word_wrap .word15 {width: 10vw;bottom: 34.5%;left: 82%;}
+.word_wrap .word16{width: 10vw;bottom: 30%;left: 78%;}
+.word_wrap .word17 {width: 4.5vw;bottom: 39%;left: 84%;}
+
+.answers .target {height: 100%;}
+.answers .word1 {width: 13vw;top: 15%;left: 11%;}
+.answers .word2 {width: 10vw;top: 10%;left: 3%;}
+.answers .word3 {width: 14vw;top: 10%;left: 4%;}
+.answers .word4 {width: 21vw;top: 15%;left: 10%;}
+.answers .word5 {width: 15vw;top: 19%;left: 10%;}
+.answers .word6 {width: 9vw;left: 15%;}
+.answers .word7{width: 14.5vw;top: 15%;left: 7%;}
+.answers .word8{width: 16vw;top: 10%;left: 9%;}
+.answers .word9{width: 10vw;top: 3%;left: 10%;}
+.answers .word10 {width: 7.5vw;top: 9%;left: 5%;}
+.answers .word11 {width: 10vw;top: 10%;left: 8%;}
+.answers .word12 {width: 10vw;top: 20%;left: 15%;}
+.answers .word13 {width: 16vw;top: 12%;left: 6%;}
+.answers .word14 { width: 14.5vw; top: 20%;left: 7%;}
+.answers .word15{width: 12vw; top: 14%;left: 2%;}
+.answers .word16 {width: 14vw;top: 10%;left: 10%;}
+.answers .word17 {width: 6vw;top: 12%;left: 13%;}
+
+  
+.answers .target {display: inline-block;background: transparent;position: absolute;}
+ 
+
+  .shadow.sh-4 {
+      background: url("../images/sh-word-dear.png") no-repeat;
+      width: 27vw;
+      height: 11vw;
+      bottom: 66%;
+      left: 18%;
+      position: absolute;
+      background-size: cover;
+  }
+  .shadow.sh-1 {
+    background: url("../images/sh-word-and.png") no-repeat;
+    width: 16.5vw;
+    height: 9vw;
+    bottom: 49%;
+    left: 52%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-2 {
+    background: url("../images/sh-word-bear.png") no-repeat;
+    width: 11vw;
+    height: 10vw;
+    bottom: 39%;
+    right: 19%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-3 {
+    background: url("../images/sh-word-cake.png") no-repeat;
+    width: 16vw;
+    height: 11vw;
+    bottom: 48.5%;
+    right: 15.5%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-5 {
+    background: url("../images/sh-word-from.png") no-repeat;
+    width: 18vw;
+    height: 10vw;
+    bottom: 54%;
+    left: 18%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-6 {
+    background: url("../images/sh-word-in.png") no-repeat;
+    width: 13vw;
+    height: 12vw;
+    bottom: 59.5%;
+    left: 24.5%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-7 {
+    background: url("../images/sh-word-join.png") no-repeat;
+    width: 16vw;
+    height: 9vw;
+    bottom: 43%;
+    left: 26%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-8 {
+    background: url("../images/sh-word-love.png") no-repeat;
+    width: 17vw;
+    height: 8vw;
+    bottom: 39%;
+    right: 31%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-9 {
+    background: url("../images/sh-word-moon.png") no-repeat;
+    width: 12vw;
+    height: 12vw;
+    bottom: 54.5%;
+    right: 23%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-10 {
+    background: url("../images/sh-word-music.png") no-repeat;
+    width: 10vw;
+    height: 11vw;
+    bottom: 48%;
+    left: 41%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-11 {
+    background: url("../images/sh-word-sun.png") no-repeat;
+    width: 12vw;
+    height: 11vw;
+    bottom: 54.5%;
+    right: 51%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-12 {
+    background: url("../images/sh-word-to.png") no-repeat;
+    width: 14vw;
+    height: 10vw;
+    bottom: 55%;
+    right: 36%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-13 {
+    background: url("../images/sh-word-tree.png") no-repeat;
+    width: 18vw;
+    height: 11vw;
+    bottom: 61%;
+    right: 24%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-14 {
+    background: url("../images/sh-word-with.png") no-repeat;
+    width: 18vw;
+    height: 9vw;
+    bottom: 48.5%;
+    left: 22%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-15 {
+    background: url("../images/sh-word-us.png") no-repeat;
+    width: 14vw;
+    height: 8vw;
+    bottom: 43.5%;
+    left: 44%;
+    position: absolute;
+    background-size: cover;
+}
+
+
+.shadow.sh-16 {
+    background: url("../images/sh-word-the.png") no-repeat;
+    width: 17vw;
+    height: 9vw;
+    bottom: 61%;
+    left: 40%;
+    position: absolute;
+    background-size: cover;
+}
+.shadow.sh-17 {
+    background: url("../images/sh-word-star.png") no-repeat;
+    width: 8vw;
+    height: 11vw;
+    bottom: 56%;
+    right: 16.5%;
+    position: absolute;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 800px) {
+    .word1{width: 5vw;}
+    .word2 {width: 4vw;}
+    .word10 {width: 3vw;}
+    .word5 {width: 6vw;bottom: 32%;}
+    .word3 {width: 6vw;}
+    .word4{width: 11vw;}
+    .word6{width: 10vw;}
+    .word7{width: 13vw;}
+    .word8{width: 8vw;}
+    .word9{width: 7vw;}
+    .word11 {width: 5vw;}
+    .word12 {width: 3vw;}
+    .word13 { width: 7vw;bottom: 32%;}
+    .word14 {width: 6vw;bottom: 25%;}
+
+.word_wrap .word1 {width: 5vw;bottom: 33%;right: 19%;}
+.word_wrap .word2 {width: 4vw;bottom: 27%;left: 32%;}
+.word_wrap .word3 {width: 5vw;bottom: 27%;left: 65%;}
+.word_wrap .word4 {width: 8vw;bottom: 36%;left: 18%;}
+.word_wrap .word5 {width: 5vw;bottom: 30%;left: 43%;}
+.word_wrap .word6 {width: 3vw;bottom: 29%;left: 74%;}
+.word_wrap .word7 {width: 6vw;bottom: 31%;left: 60%;}
+.word_wrap .word8 {width: 6vw;bottom: 37%;left: 35%;}
+.word_wrap .word9 {width: 4vw;bottom: 34%;left: 45%;}
+.word_wrap .word10 {width: 3vw;bottom: 31%;left: 29%;}
+.word_wrap .word11 {width: 4vw;bottom: 27%;left: 21%;}
+.word_wrap .word12 {width: 3vw;bottom: 32%;left: 54%;}
+.word_wrap .word13 {width: 5vw;bottom: 27%;left: 54%;}
+.word_wrap .word14 { width: 5vw;bottom: 27%;left: 42%;}
+.word_wrap .word15 {width: 5vw;bottom: 33%;left: 34%;}
+.word_wrap .word16{width: 5vw;bottom: 43%;left: 58%;}
+.word_wrap .word17 {width: 2vw;bottom: 43%;left: 22%;}
+
+.answers .target {height: 100%;}
+.answers .word1 {width: 5.5vw;top: 16%;left: 10%;}
+.answers .word2 {width: 4vw;height: 3vw;bottom: 25%;left: 10%;}
+.answers .word3 {width: 6vw;top: 10%;left: 8%;}
+.answers .word4 {width: 8vw;top: 10%;left: 8%;}
+.answers .word5 {width: 6vw;top: 12%;left: 10%;}
+.answers .word6 {width: 3vw;top:0;left: 20%;}
+.answers .word7{width: 7vw;top: 14%;left: 10%;}
+.answers .word8{width: 8vw;top: 12%;left: 6%;}
+.answers .word9{bottom: 0;left: 10%;width: 4.5vw;}
+.answers .word10 {width: 3.5vw;top: 10%;left: 8%;}
+.answers .word11 {width: 4vw;top: 10%;left: 10%;}
+.answers .word12 {width: 3vw;top: 19%;left: 19%;}
+.answers .word13 {width: 5.5vw;top: 10%;left: 6%;}
+.answers .word14 {width: 6.2vw;top: 18%;left: 10%;}
+.answers .word15 {width: 6vw; height: 100%;top: 14%;left:0;}
+.answers .word16 {width: 6vw; height: 100%;top: 6%;left: 5%;}
+.answers .word17 {width: 2vw;height: 100%;left: 10%;}
+
+
+.shadow.sh-4 {
+    background: url("../images/sh-word-dear.png") no-repeat;
+    width: 10vw;
+    height: 4vw;
+    bottom: 68%;
+    left: 26%;
+    position: absolute;
+    background-size: contain;
+}
+.shadow.sh-1 {
+  background: url("../images/sh-word-and.png") no-repeat;
+  width: 7vw;
+  height: 4vw;
+  bottom: 50%;
+  left: 51%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-2 {
+  background: url("../images/sh-word-bear.png") no-repeat;
+  width: 5vw;
+  height: 5vw;
+  bottom: 38%;
+  right: 22%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-3 {
+  background: url("../images/sh-word-cake.png") no-repeat;
+  width: 7vw;
+  height: 5vw;
+  bottom: 48%;
+  right: 22%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-5 {
+  background: url("../images/sh-word-from.png") no-repeat;
+  width: 8vw;
+  height: 4vw;
+  bottom: 56.5%;
+  left: 24%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-6 {
+  background: url("../images/sh-word-in.png") no-repeat;
+  width: 4vw;
+  height: 4vw;
+  bottom: 61.5%;
+  left: 36%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-7 {
+  background: url("../images/sh-word-join.png") no-repeat;
+  width: 8vw;
+  height: 5vw;
+  bottom: 40%;
+  left: 25%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-8 {
+  background: url("../images/sh-word-love.png") no-repeat;
+  width: 9vw;
+    height: 4vw;
+    bottom: 35.5%;
+    right: 31%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-9 {
+  background: url("../images/sh-word-moon.png") no-repeat;
+  width: 5vw;
+  height: 5vw;
+  bottom: 57%;
+  right: 28%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-10 {
+  background: url("../images/sh-word-music.png") no-repeat;
+  width: 5vw;
+  height: 5vw;
+  bottom: 49%;
+  left: 40%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-11 {
+  background: url("../images/sh-word-sun.png") no-repeat;
+  width: 5vw;
+    height: 5vw;
+    bottom: 56%;
+    right: 50%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-12 {
+  background: url("../images/sh-word-to.png") no-repeat;
+  width: 4.5vw;
+  height: 3vw;
+  bottom: 58.5%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-13 {
+  background: url("../images/sh-word-tree.png") no-repeat;
+ 
+  width: 7vw;
+  height: 4vw;
+  bottom: 64.5%;
+  right: 25%;
+
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-14 {
+  background: url("../images/sh-word-with.png") no-repeat;
+  width: 8vw;
+    height: 4vw;
+    bottom: 49.5%;
+    left: 23%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-15 {
+  background: url("../images/sh-word-us.png") no-repeat;
+  width: 7vw;
+    height: 4vw;
+    bottom: 41%;
+    left: 42.5%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-16 {
+  background: url("../images/sh-word-the.png") no-repeat;
+  width: 7vw;
+  height: 4vw;
+  bottom: 62.5%;
+  left: 47%;
+  position: absolute;
+  background-size: contain;
+}
+.shadow.sh-17 {
+  background: url("../images/sh-word-star.png") no-repeat;
+  width: 2.5vw;
+    height: 3.5vw;
+    bottom: 59.5%;
+    right: 24%;
+  position: absolute;
+  background-size: contain;
+}
+
+}

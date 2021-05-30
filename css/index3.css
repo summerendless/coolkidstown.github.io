@@ -1,0 +1,40 @@
+.bg-wrap.bg3 {
+    position: relative;
+    margin: 0 auto;
+    background: url("../images/cherrytree.png") no-repeat;
+    height: 100%;
+    background-size: 100% 100%;
+}
+#img1 {
+    position: absolute;
+    bottom: 15%;
+    left: 13%;
+    width: 80vw;
+    padding-bottom: 96%;
+    background: url('../images/1.gif') no-repeat;
+    background-size: contain;
+}
+#img2{
+    position: absolute;
+    bottom: 15%;
+    left: -2%;
+    width: 97vw;
+    padding-bottom: 96%;    
+    background: url('../images/2.gif') no-repeat;
+    background-size: contain;
+
+}
+#img3 {
+    position: absolute;
+    bottom: 17%;
+    left: -2%;
+    width: 97vw;
+    padding-bottom: 96%;    
+    background: url('../images/3.gif') no-repeat;
+    background-size: contain;
+}
+@media only screen and (min-width: 800px) {
+    #img1 {width: 33vw;}
+    #img2 {width: 40vw;}
+    #img3 {width: 40vw;}
+}

@@ -14,13 +14,24 @@ html,
 body {
   width: 100%;
 }
-html {
-}
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 100%;
+  overflow: hidden;
   background-color: #fff;
   *word-break: break-all;
   -ms-word-break: break-all;
 }
+
+a:active, a:focus{
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+html {-webkit-tap-highlight-color: transparent;}
+
 body,
 h1,
 h2,

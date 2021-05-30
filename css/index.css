@@ -1,0 +1,102 @@
+.door-back {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.door-back{
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 13%;
+    width: 73vw;
+    height: 30vh;
+    background: url("../images/house.png") no-repeat;
+    background-size: 100% 100%;   
+}
+.door1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 74vw;
+    height: 30vh;
+    background: url("../images/door-1.png") no-repeat;
+    background-size: 100% 100%;
+    transition: .5s;
+    transform-origin: 0%;
+}
+.door2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 74vw;
+    height: 30vh;
+    background: url("../images/door-2.png") no-repeat;
+    background-size: 100% 100%;
+    transition: .5s;
+    transform-origin: 0%;
+}
+
+.doorOpen2 {
+    transform: perspective(800px) rotateY(-120deg);
+    left: 22%;
+    bottom: 4%;
+}
+.doorOpen {
+    transform: perspective(800px) rotateY(-120deg);
+    left: 35%;
+    bottom: 4%;
+    z-index: 10;
+}
+.redoorOpen {
+    left: 0;
+    bottom: 0; 
+    width: 59vw;
+    height: 28vh;
+    background-size: 100% 100%;
+    transition: .5s;
+    transform-origin: 0%;
+    transform: initial;
+}
+.video {
+    width: 100%;
+    /* min-height: 122vh;
+    height: 100%;
+    top: -11%; */
+    position: relative;
+}
+.open_video {
+    width: 73vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.open_invi {
+    position: absolute;
+    bottom: 10%;
+    padding-bottom: 13%;
+    left: 50%;
+    width: 15vw;
+    transform: translateX(-50%);
+    display: none;
+}
+.open_invi img{width: 100%;}
+.video {display: none;}
+@media only screen and (min-width: 800px) {
+    .door1, .door2 {width: 29vw;height: 36vh;}
+    .door-back {
+        width: 29vw;
+        height: 36vh;
+    }
+    .open_video{
+        width: 33vw;
+        height: 30vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .video {height: 202%;top: -55%;}
+}

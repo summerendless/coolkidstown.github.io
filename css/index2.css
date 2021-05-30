@@ -1,0 +1,29 @@
+
+.word_d {width: 12vw;top: 30%;right: 16%;}
+.word_l {width: 12vw;top: 29%;right: 32%;}
+.word_n {width: 10vw;top: 22%;left: 23%;}
+.word_c {width: 10vw;top: 23%;left: 46%;}
+.word_o {width: 10vw;top: 36%;left: 46%;}
+.word_oo {width: 12vw;bottom: 63%;left: 16%;}
+.word_ooo {width: 10vw;top: 41%;left: 46%;}
+.word_t {width: 10vw;bottom: 50%;left: 38%;}
+.word_i {bottom: 56%;width: 11vw;left: 25%;}
+.word_k {top: 34%;width: 10vw;left: 37%;}
+.word_s {top: 38%;width: 10vw;right: 14%;}
+.word_w {width: 10vw;top: 36%;left: 55%;}
+
+@media only screen and (min-width: 800px) {
+
+    .word_oo {width: 5vw;}
+    .word_n {width: 5vw;}
+    .word_i {width: 5vw;}
+    .word_c {width: 5vw;}
+    .word_k {width: 5vw;}
+    .word_d {width: 5vw;}
+    .word_l {width: 5vw;}
+    .word_o {width: 5vw;}
+    .word_ooo {width: 5vw;}
+    .word_s {width: 5vw;}
+    .word_t {width: 5vw;}
+    .word_w {width: 5vw;}
+}

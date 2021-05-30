@@ -29,6 +29,8 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/cool.css">
+<link rel="stylesheet" type="text/css" href="./css/index4.css">
+
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 </head>
@@ -48,7 +50,7 @@
     <div class="word btn_light"><img src="./images/btn_light.png"/></div>
     <iframe src="./images/silence.mp3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
     <audio id="bgm" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/mp3"></audio>    
-    <audio id="playBear" class="audio" loop controls  style="position: absolute; top: -1000px;"><source src="./images/play_bear.mp3" type="audio/mp3" ></audio>    
+    <audio id="playBear1" class="audio" loop controls  style="position: absolute; top: -1000px;"><source src="./images/play_bear.mp3" type="audio/mp3" ></audio>    
     <div class="btn_fire"><img src="./images/btn_fire_set.png" alt="" data-animated="./images/btn_fire.gif" data-static="./images/btn_fire.gif" class="hov-anim"></div>	
     <div class="btn_bear"><img src="./images/btn_bear_set.png" alt="" data-animated="./images/btn_bear.gif" data-static="./images/btn_bear.gif" class="hov-anim"></div>
 </div>
@@ -80,10 +82,22 @@ function downloadURI(uri, name){
 }
 </script>
 <script type="text/javascript">
-    $(".btn_bear").click(function(e){
+const vid = "#playBear1";
+const bgm = "#bgm";
+
+const Btn = $('.btn_bear');
+
+function playVid(el) { 
+    el = $(el)[0];
+    el.play(); 
+} 
+
+Btn.on('click', function(e){
         e.preventDefault();
-        $("#bgm").get(0).pause();
-        $("#playBear").get(0).play();
+        // $("#bgm").get(0).pause();
+        $(bgm)[0].volume = 0.2;
+        // $("#playBear").get(0).play();
+        playVid(vid);
     })
 </script>
 
