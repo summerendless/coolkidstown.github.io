@@ -1,3 +1,0 @@
-
-
-$( '.bg-wrap .word' ).draggable();
