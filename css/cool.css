@@ -684,8 +684,8 @@ height: 29vh; */
 .btn_fire img{
     width: 100%;
 }
-.btn_light {    width: 20vw;
-    right: 15%;
+.btn_light {width: 20vw;
+    right: 10%;
     top: 20%;}
 .btn_music {
 
@@ -705,6 +705,17 @@ height: 29vh; */
     width: 12vw;
     left: 40%;
 
+}
+.btn_music2 {
+
+    width: 16vw;
+    top: 31%;
+    left: 23%;
+}
+.btn_star {
+    width: 17vw;
+    right: 32%;
+    top: 20%;
 }
 .btn_as {
     right: 20%;

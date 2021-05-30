@@ -26,7 +26,6 @@
 
 <title>CoolKidsTown</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/cool.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -59,19 +58,11 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/html2canvas.js"></script>
-
-<!-- <script type="text/javascript">
-$(document).ready(function() {
-    var audio = new Audio('main_bgm.mp3');
-    audio.play();
-    });
-</script> -->
 <script>
     $( '.bg-wrap .word' ).draggable();
 </script>
 <script type="text/javascript">
-
-    //이미지(png)로 다운로드
+ //이미지(png)로 다운로드
     function downImg(){
         html2canvas($(".bg-wrap")[0]).then(function(canvas){
             var myImage = canvas.toDataURL();
@@ -86,11 +77,9 @@ $(document).ready(function() {
         document.body.appendChild(link);
         link.click();
     }
-    </script>
+</script>
 <script type="text/javascript">
-function btnNext(){
-    location.href = "index3.html";
-  }
+    function btnNext(){location.href = "index3.html";}
 </script>
 </body>
 </html>
