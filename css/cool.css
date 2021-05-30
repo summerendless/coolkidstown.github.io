@@ -355,12 +355,19 @@ height: 29vh; */
 
 }
 #img3 {
-    position: absolute;
+    /* position: absolute;
     bottom: 15%;
     left: 0;
-    width: 100vw;
+    width: 100vw; */
      /* background-size: cover;
     background: url('../images/3.gif') no-repeat; */
+    position: absolute;
+    bottom: 15%;
+    left: -6%;
+    width: 98vw;
+    padding-bottom: 96%;    
+    background: url('../images/2.gif') no-repeat;
+    background-size: contain;
 
 }
 #next {
