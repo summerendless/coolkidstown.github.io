@@ -48,19 +48,36 @@
     <div class="btn_bear"><img src="./images/btn_bear_set.png" alt="" data-animated="./images/btn_bear.gif" data-static="./images/btn_bear.gif" class="hov-anim"></div>
     <iframe src="./images/SILENCE.MP3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
     <audio id="bgm" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/wav"></audio>    
-    <audio id="playBear" class="audio" controls  style="position: absolute; top: -1000px;"><source src="./images/play_bear.mp3" type="audio/wav" ></audio>    
+    <audio id="playBear" class="audio" loop controls  style="position: absolute; top: -1000px;"><source src="./images/play_bear.mp3" type="audio/wav" ></audio>    
 
 </div>
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
-<script src="js/html2canvas.js"></script>
 <script src="js/cool.js"></script>
-<script>
+<script type="text/javascript">
     $(window).load(function() {
     $('#bgm').get(0).play();
 });
+</script>
+<script type="text/javascript">
+
+//이미지(png)로 다운로드
+function downImg(){
+    html2canvas($(".bg-wrap")[0]).then(function(canvas){
+        var myImage = canvas.toDataURL();
+        downloadURI(myImage, "저장할 파일명.png") 
+    });
+}
+
+function downloadURI(uri, name){
+    var link = document.createElement("a")
+    link.download = name;
+    link.href = uri;
+    document.body.appendChild(link);
+    link.click();
+}
 </script>
 <script type="text/javascript">
     $(".btn_bear").click(function(e){
@@ -68,6 +85,7 @@
         $("#bgm").get(0).pause();
         $("#playBear").get(0).play();
     })
+
 </script>
 
 <script type="text/javascript">
