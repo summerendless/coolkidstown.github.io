@@ -157,7 +157,15 @@
         width: 6vw;
         transform: translateX(-50%);
     }
-  
+    .bg-wrap.bg2 .btn_next, .bg-wrap.bg3 .btn_next, .bg-wrap.bg4 .btn_next, .bg-wrap.bg5 .btn_next {
+        position: absolute;
+        width: 6vw;
+        right: 20px;
+        bottom: 10px;
+        background: none;
+        border: none;
+        z-index: 100;
+    }
     .bg-wrap.bg2{
         position: relative;
         margin: 0 auto;

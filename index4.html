@@ -69,7 +69,7 @@
 function downImg(){
     html2canvas($(".bg-wrap")[0]).then(function(canvas){
         var myImage = canvas.toDataURL();
-        downloadURI(myImage, "저장할 파일명.png") 
+        downloadURI(myImage, "coolkidstown.png") 
     });
 }
 
@@ -95,7 +95,6 @@ function playVid(el) {
 Btn.on('click', function(e){
         e.preventDefault();
         // $("#bgm").get(0).pause();
-        $(bgm)[0].volume = 0;
         // $("#playBear").get(0).play();
         playVid(vid);
     })

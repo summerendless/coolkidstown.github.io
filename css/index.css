@@ -97,5 +97,13 @@
         bottom: 0;
         left: 0;
     }
-    .video {height: 202%;top: -55%;}
+    .video {height: 228%;top: -55%;}
+}
+@media only screen and (min-width: 1281px) {
+
+    .video {height: 233%;top: -55%;}
+    .open_invi {
+        bottom: 0;
+        width: 6vw;
+    }
 }

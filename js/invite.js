@@ -37,7 +37,7 @@ $(document).ready(function () {
 function downImg(){
     html2canvas($(".bg-wrap")[0]).then(function(canvas){
         var myImage = canvas.toDataURL();
-        downloadURI(myImage, "저장할 파일명.png") 
+        downloadURI(myImage, "coolkidstown.png") 
     });
 }
 

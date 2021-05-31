@@ -44,7 +44,7 @@
 		<a class="open_video"></a>
 	</div>
 	<a class="open_invi" href="invite_paper.html"><img src="./images/btn_next.png"/></a>
-    <audio id="bgmAudio" autoplay loop controls style="position: absolute; top: -1000px;">
+    <audio id="bgmAudio" loop controls style="position: absolute; top: -1000px;">
 		<source src="./images/main_bgm.mp3" type="audio/mp3">
 	</audio>    
 	<video playsinline id="myVideo" class="video audio" id="cardAudio1">
@@ -60,7 +60,7 @@
     function downImg(){
         html2canvas($(".bg-wrap")[0]).then(function(canvas){
             var myImage = canvas.toDataURL();
-            downloadURI(myImage, "저장할 파일명.png") 
+            downloadURI(myImage, "coolkidstown.png") 
         });
     }
     
