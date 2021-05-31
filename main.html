@@ -30,49 +30,45 @@
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/cool.css">
 <link rel="stylesheet" type="text/css" href="./css/index.css">
+<link rel="stylesheet" type="text/css" href="./css/index2.css">
+<link rel="stylesheet" type="text/css" href="./css/invite.css">
 
 <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
 
 </head>
 <body>
-<div class="bg-wrap bg0">
-	<div class="copy_right"><img src="./images/copy_right.png"/></div>
-    <button type="button" onclick="downImg()" class="out"><img src="./images/out.png"/></button>
-	<div class="door-back">
-		<div class="door1"></div>
-		<div class="door2"></div>
-		<a class="open_video"></a>
-	</div>
-	<!-- <a class="open_invi" href="#invite_paper.html"><img src="./images/btn_next.png"/></a> -->
-	<button type="button" onclick="btnNext()" class="btn_next"><img src="./images/btn_next.png"/></button>
-    <audio id="bgmAudio" autoplay loop controls style="position: absolute; top: -1000px;">
-		<source src="./images/main_bgm.mp3" type="audio/mp3">
-	</audio>    
-	<video playsinline id="myVideo" class="video audio" id="cardAudio1">
-		<source src="./images/invite.mp4" type="video/mp4">
-	</video>         
-</div>
+<div id="index1"></div>
+<div id="invite" style="display: none;"></div>
+<div id="index2"  style="display: none;"></div>
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/html2canvas.js"></script>
-<script type="text/javascript">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/invite.js"></script>
 
-    //이미지(png)로 다운로드
-    function downImg(){
-        html2canvas($(".bg-wrap")[0]).then(function(canvas){
-            var myImage = canvas.toDataURL();
-            downloadURI(myImage, "저장할 파일명.png") 
-        });
-    }
-    
-    function downloadURI(uri, name){
-        var link = document.createElement("a")
-        link.download = name;
-        link.href = uri;
-        document.body.appendChild(link);
-        link.click();
-    }
-    </script>
+<script>
+	$(function () {
+        $.ajax({
+            url: 'index1.html',
+			success: function (data) {
+				$('#index1').append(data);
+			}
+        })
+        $.ajax({
+            url: 'invite_paper.html',
+			success: function (data) {
+				$('#invite').append(data);
+			}
+        })
+        $.ajax({
+            url: 'index2.html',
+			success: function (data) {
+				$('#index2').append(data);
+			}
+        })
+	});
+</script>
 <script type="text/javascript">
 	$(function(){
 		var open_video = $('.open_video');

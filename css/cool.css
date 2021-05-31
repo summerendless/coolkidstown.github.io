@@ -70,6 +70,7 @@
     background: none;
     border: none;
     z-index: 100;
+    display: none;
 }
 #next {
     width: 30px;
@@ -81,16 +82,7 @@
     width: 74%;
     height: 48%;
 }
-.bg-wrap + button[type="submit"] {
-    /* border: none;
-    color: #fff;
-    background: none;
-    position: absolute;
-    bottom: 10%;
-    padding-bottom: 13%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 15vw; */
+.btn_invite {
     border: none;
     color: #fff;
     background: none;
@@ -102,7 +94,31 @@
     z-index: 100;
     width: 15vw;
     transform: translateX(-50%);
-  }
+    display: none;
+}
+/* .bg-wrap + button[type="submit"] {
+    border: none;
+    color: #fff;
+    background: none;
+    position: absolute;
+    bottom: 10%;
+    padding-bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vw;
+    border: none;
+    color: #fff;
+    background: none;
+    position: absolute;
+    bottom: -3%;
+    padding-bottom: 13%;
+    right: 0;
+    left: auto;
+    z-index: 100;
+    width: 15vw;
+    transform: translateX(-50%);
+    display: none;
+  } */
 
 @media only screen and (min-width: 800px) {
     .bg-wrap {max-width:40%;margin:  0 auto;}

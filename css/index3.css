@@ -51,6 +51,7 @@
     background: url('../images/3.png') no-repeat;
     background-size: contain;
 }
+.clap {display: none;}
 @media only screen and (min-width: 800px) {
     #img1 {width: 33vw;}
     #img2 {width: 40vw;}

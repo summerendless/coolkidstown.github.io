@@ -39,9 +39,9 @@
     <div class="copy_right"><img src="./images/copy_right.png"/></div>
     <button type="button" onclick="downImg()" class="out"><img src="./images/out.png"/></button>
 
-    <iframe src="./images/silence.mp3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
+    <!-- <iframe src="./images/silence.mp3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
     <audio id="bgm" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/mp3"></audio>    
-    
+     -->
     <div class="word_wrap">
         <div class="word word1" data-target="word1"><img src="./images/word_and.png"/></div>
         <div class="word word2" data-target="word2"><img src="./images/word_bear.png"/></div>
@@ -85,68 +85,13 @@
     </div>
 </div>
 
- <button type="submit" value="submit"><img src="./images/btn_next.png"/></button>
-</div>
+ <button type="submit" value="submit" class="btn_invite"><img src="./images/btn_next.png"/></button>
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/html2canvas.js"></script>
-<script>
-  $( '.bg-wrap .word' ).draggable();
-</script>
-<script type="text/javascript">
-  //이미지(png)로 다운로드
-  function downImg(){
-      html2canvas($(".bg-wrap")[0]).then(function(canvas){
-          var myImage = canvas.toDataURL();
-          downloadURI(myImage, "저장할 파일명.png") 
-      });
-  }
-  
-  function downloadURI(uri, name){
-      var link = document.createElement("a")
-      link.download = name;
-      link.href = uri;
-      document.body.appendChild(link);
-      link.click();
-  }
-</script>
-<script type="text/javascript">
-  $(document).ready(function () {
-    //initialize the quiz options
-    var answersLeft = [];
-    $(".bg-wrap")
-      .find(".word")
-      .each(function (i) {
-        var $this = $(this);
-        var answerValue = $this.data("target");
-        var $target = $('.answers .target[data-accept="' + answerValue + '"]');
-        var labelText = $this.html();
-        $this.draggable({
-          revert: "invalid",
-          containment: ".bg-wrap"
-        });
+<script src="js/invite.js"></script>
 
-        if ($target.length > 0) {
-          $target.droppable({
-            accept: '.word[data-target="' + answerValue + '"]',
-            drop: function (event, ui) {
-              $this.draggable("destroy");
-              $target.droppable("destroy");
-              $this.html("&nbsp;");
-              $target.html(labelText);
-              answersLeft.splice(answersLeft.indexOf(answerValue), 1);
-            }
-          });
-          answersLeft.push(answerValue);
-        } else {
-        }
-      });
-    $('.bg-wrap + button[type="submit"]').click(function () {
-      location.href = "index2.html";
-    });
-  });
-</script>
 </body>
 </html>
