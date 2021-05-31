@@ -11,6 +11,15 @@
     left: 13%;
     width: 80vw;
     padding-bottom: 96%;
+    background: url('../images/1.png') no-repeat;
+    background-size: contain;
+}
+#img1-1 {
+    position: absolute;
+    bottom: 15%;
+    left: 13%;
+    width: 80vw;
+    padding-bottom: 96%;
     background: url('../images/1.gif') no-repeat;
     background-size: contain;
 }
@@ -31,6 +40,15 @@
     width: 97vw;
     padding-bottom: 96%;    
     background: url('../images/3.gif') no-repeat;
+    background-size: contain;
+}
+#img3-1 {
+    position: absolute;
+    bottom: 17%;
+    left: -2%;
+    width: 97vw;
+    padding-bottom: 96%;    
+    background: url('../images/3.png') no-repeat;
     background-size: contain;
 }
 @media only screen and (min-width: 800px) {

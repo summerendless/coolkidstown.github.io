@@ -1,8 +1,8 @@
 
 .btn_bear {
-    right: 0;
+    right: 8%;
     position: absolute;
-    width: 58vw;
+    width: 56vw;
     bottom: 14%;
 }
 .btn_bear img{
@@ -10,10 +10,10 @@
 }
 
 .btn_fire {
-    left: 5%;
+    left: 10%;
     position: absolute;
-    width: 30vw;
-    bottom: 14%;
+    width: 26vw;
+    bottom: 10%;
 }
 .btn_fire img{
     width: 100%;
