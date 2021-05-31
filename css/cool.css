@@ -62,7 +62,16 @@
     background: none;
     border: none;
 }
-.btn_next {
+.bg-wrap.bg2 .btn_next, .bg-wrap.bg3 .btn_next, .bg-wrap.bg4 .btn_next, .bg-wrap.bg5 .btn_next {
+    position: absolute;
+    width: 15vw;
+    right: 20px;
+    bottom: 10px;
+    background: none;
+    border: none;
+    z-index: 100;
+}
+.bg-wrap.bg0 .btn_next {
     position: absolute;
     width: 15vw;
     right: 20px;
@@ -94,7 +103,6 @@
     z-index: 100;
     width: 15vw;
     transform: translateX(-50%);
-    display: none;
 }
 /* .bg-wrap + button[type="submit"] {
     border: none;
