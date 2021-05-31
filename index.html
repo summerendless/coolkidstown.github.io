@@ -43,8 +43,7 @@
 		<div class="door2"></div>
 		<a class="open_video"></a>
 	</div>
-	<!-- <a class="open_invi" href="#invite_paper.html"><img src="./images/btn_next.png"/></a> -->
-	<button type="button" onclick="btnNext()" class="btn_next"><img src="./images/btn_next.png"/></button>
+	<a class="open_invi" href="invite_paper.html"><img src="./images/btn_next.png"/></a>
     <audio id="bgmAudio" autoplay loop controls style="position: absolute; top: -1000px;">
 		<source src="./images/main_bgm.mp3" type="audio/mp3">
 	</audio>    
@@ -77,8 +76,6 @@
 	$(function(){
 		var open_video = $('.open_video');
 		var video = $('.video');
-		$('.btn_next').css('display','none');
-
 		open_video.click(function(){
 			if($(".door2").hasClass("doorOpen2")){
 				video.fadeIn(1000);
@@ -87,7 +84,7 @@
 		});
 	});
   	$(".video").on("ended", function(){
-	$(".btn_next").fadeIn(500);
+	$(".open_invi").fadeIn(500);
 });
 </script>
 <script type="text/javascript">
@@ -109,11 +106,6 @@
 			}
 	});
 });
-</script>
-<script type="text/javascript">
-    function btnNext(){
-        location.href = "invite_paper.html";
-      }
 </script>
 </body>
 </html>

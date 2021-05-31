@@ -76,11 +76,10 @@
 }
 .open_invi {
     position: absolute;
-    bottom: 10%;
-    padding-bottom: 13%;
-    left: 50%;
+    bottom: 6%;
+    right: 10%;
     width: 15vw;
-    transform: translateX(-50%);
+    z-index: 100;
     display: none;
 }
 .open_invi img{width: 100%;}
