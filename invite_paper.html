@@ -127,7 +127,7 @@ function shareAct(a){
 
 }
 </script> -->
-<script type='text/javascript'>
+<!-- <script type='text/javascript'>
     //<![CDATA[
       // // 사용할 앱의 JavaScript 키를 설정해 주세요.
       Kakao.init('6524c3bc81d02c971afa7aa850b87a04');
@@ -160,5 +160,45 @@ function shareAct(a){
       });
     //]]>
   </script>
+   -->
+  <script type='text/javascript'>
+    //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('6524c3bc81d02c971afa7aa850b87a04');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link
+            .createDefaultButton({
+                container : '#kakao-link-btn',
+                objectType : 'feed',
+                content : {
+                    title : '카카오톡공유 테스트',
+                    description : '#아우터 #반팔 #반바지 #맨투맨 #슈즈 #초여름',
+                    imageUrl : 'http://img22.phps.kr/tgreen09/MUSINSA/2016/ruggedtop.jpg',
+                    link : {
+                        mobileWebUrl : 'http://designnaive.dothome.co.kr/',
+                        webUrl : 'http://designnaive.dothome.co.kr/'
+                    }
+                },
+                social : {
+                    likeCount : 286,
+                    commentCount : 45,
+                    sharedCount : 845
+                },
+                buttons : [ {
+                    title : '웹으로 보기',
+                    link : {
+                        mobileWebUrl : 'http://designnaive.dothome.co.kr/',
+                        webUrl : 'http://designnaive.dothome.co.kr/'
+                    }
+                }, {
+                    title : '앱으로 보기',
+                    link : {
+                        mobileWebUrl : 'http://designnaive.dothome.co.kr/',
+                        webUrl : 'http://designnaive.dothome.co.kr/'
+                    }
+                } ]
+            });
+    //]]>
+</script>
 </body>
 </html>
