@@ -79,13 +79,11 @@
 		open_video.click(function(){
 			if($(".door2").hasClass("doorOpen2")){
 				video.fadeIn(1000);
+				$(".open_invi").fadeIn(500);
 				$(".video").get(0).play();
 			}
 		});
 	});
-  	$(".video").on("ended", function(){
-	$(".open_invi").fadeIn(500);
-});
 </script>
 <script type="text/javascript">
  $(document).ready(function(){

@@ -32,13 +32,18 @@
 <link rel="stylesheet" type="text/css" href="./css/invite.css">
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <body>
+    <style>
+        .link-icon.kakao { background-image: url(./images/icon-kakao.png); background-repeat: no-repeat; }
+    </style>
 <div class="bg-wrap bg1">
     <div class="copy_right"><img src="./images/copy_right.png"/></div>
     <button type="button" onclick="downImg()" class="out"><img src="./images/out.png"/></button>
-
+    <a id="kakao-link-btn" href="javascript:sendLink()">
+        카카오톡 공유하기 버튼
+      </a>
     <!-- <iframe src="./images/silence.mp3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
     <audio id="bgm" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/mp3"></audio>    
      -->
@@ -92,6 +97,68 @@
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/html2canvas.js"></script>
 <script src="js/invite.js"></script>
+<!-- <script>
+    $(window).ready(function(){ 
+  
+  $(".snsList li a").click(function(){
 
+      shareAct(this);
+
+  });
+
+});
+
+function shareAct(a){
+
+  var snsCode = $(a).attr('id');
+    
+  var cUrl = "현재페이지 주소";
+
+  switch(snsCode){
+
+      case"vIconKs":
+          //카카오스토리
+          cUrl = 'https://story.kakao.com/share?url='+cUrl;
+      break;
+
+  }
+
+  window.open(cUrl,'','width=600,height=300,top=100,left=100,scrollbars=yes');
+
+}
+</script> -->
+<script type='text/javascript'>
+    //<![CDATA[
+      // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+      Kakao.init('6524c3bc81d02c971afa7aa850b87a04');
+      // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+      Kakao.Link.createDefaultButton({
+        container: '#kakao-link-btn',
+        objectType: 'feed',
+        content: {
+          title: $('meta[property="og:title"]').attr( 'content' ),
+          description: $('meta[property="og:description"]').attr( 'content' ),
+          imageUrl: $( 'meta[property="og:image"]' ).attr( 'content' ),
+          link: {
+            mobileWebUrl: window.location.href,
+            webUrl: window.location.href
+          }
+        },
+        social: {
+          likeCount: 286,
+          commentCount: 45,
+          sharedCount: 845
+        },
+        buttons: [
+          {
+            title: '웹으로 보기',
+            link: {
+              webUrl: window.location.href
+            }
+          }
+        ]
+      });
+    //]]>
+  </script>
 </body>
 </html>
