@@ -37,7 +37,7 @@
 </head>
 <body>
 <div class="bg-wrap bg1">
-    <a class="copy_right" id="kakao-link-btn" ><img src="./images/copy_right.png"/></a>
+    <a class="copy_right" id="kakao-link-btn" href="javascript:shareKakao();"><img src="./images/copy_right.png"/></a>
     <button type="button" onclick="downImg()" class="out"><img src="./images/out.png"/></button>
     <!-- <iframe src="./images/silence.mp3" allow="autoplay" id="bgmfr" style="display:none"></iframe>
     <audio id="bgm" autoplay loop controls style="position: absolute; top: -1000px;"><source src="./images/main_bgm.mp3" type="audio/mp3"></audio>    
@@ -93,27 +93,11 @@
 <script src="js/html2canvas.js"></script>
 <script src="js/invite.js"></script>
 <script type='text/javascript'>
-    // function shareKakao() {
+    function shareKakao() {
  
  // 사용할 앱의 JavaScript 키 설정
  Kakao.init('6524c3bc81d02c971afa7aa850b87a04');
-
- // 카카오링크 버튼 생성
-//  Kakao.Link.createDefaultButton({
-//    container: '#kakao-link-btn', // 카카오공유버튼ID
-//    objectType: 'feed',
-//    content: {
-//      title: "coolkidstown", // 보여질 제목
-//      description: "coolkidstown", // 보여질 설명
-//      imageUrl: "https://summerendless.github.io/coolkidstown.github.io/invite_paper.html", // 콘텐츠 URL
-//      link: {
-//         mobileWebUrl: "https://summerendless.github.io/coolkidstown.github.io/invite_paper.html",
-//         webUrl: "https://summerendless.github.io/coolkidstown.github.io/invite_paper.html"
-//      }
-//    }
-//  });
-// }
-var shareLink = 'https://summerendless.github.io/coolkidstown.github.io/invite_paper.html';
+ var shareLink = 'http://designnaive.dothome.co.kr';
 
 Kakao.Link.createDefaultButton({
   container: '#kakao-link-btn',
@@ -144,6 +128,8 @@ Kakao.Link.createDefaultButton({
     }
   ]
 });
+}
+
 
 
 </script>
